@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PHSearchBarContainerView" customModule="PezzleHub" customModuleProvider="target">
+            <connections>
+                <outlet property="searchResults" destination="AUp-2j-o4M" id="StG-qY-sjK"/>
+                <outlet property="searchTextField" destination="kkr-XZ-Qsu" id="o6c-4W-UYG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5aQ-nr-QCb">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-V2-GwS">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifying_glass_dark" translatesAutoresizingMaskIntoConstraints="NO" id="DC1-3Z-wDM">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DC1-3Z-wDM" secondAttribute="height" multiplier="1:1" id="34d-3J-hvk"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-XZ-Qsu">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="kkr-XZ-Qsu" secondAttribute="bottom" id="0OY-6X-GN0"/>
+                        <constraint firstAttribute="trailing" secondItem="DC1-3Z-wDM" secondAttribute="trailing" constant="3" id="My3-IO-gSF"/>
+                        <constraint firstItem="DC1-3Z-wDM" firstAttribute="top" secondItem="IZa-V2-GwS" secondAttribute="top" id="PCw-Qu-b91"/>
+                        <constraint firstItem="kkr-XZ-Qsu" firstAttribute="top" secondItem="IZa-V2-GwS" secondAttribute="top" id="WhN-xT-x0u"/>
+                        <constraint firstItem="kkr-XZ-Qsu" firstAttribute="leading" secondItem="IZa-V2-GwS" secondAttribute="leading" constant="12" id="cmf-Fo-mFa"/>
+                        <constraint firstAttribute="height" constant="26" id="onh-q1-E7e"/>
+                        <constraint firstItem="DC1-3Z-wDM" firstAttribute="leading" secondItem="kkr-XZ-Qsu" secondAttribute="trailing" constant="12" id="vHm-GD-udw"/>
+                        <constraint firstAttribute="bottom" secondItem="DC1-3Z-wDM" secondAttribute="bottom" id="xpL-yb-F6n"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全30コースがみつかりました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUp-2j-o4M">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IZa-V2-GwS" firstAttribute="top" secondItem="5aQ-nr-QCb" secondAttribute="top" constant="12" id="CgJ-aJ-B1R"/>
+                <constraint firstItem="AUp-2j-o4M" firstAttribute="top" secondItem="IZa-V2-GwS" secondAttribute="bottom" constant="12" id="NNF-QO-MuA"/>
+                <constraint firstItem="IZa-V2-GwS" firstAttribute="leading" secondItem="5aQ-nr-QCb" secondAttribute="leading" constant="12" id="SuX-mh-pMR"/>
+                <constraint firstAttribute="trailing" secondItem="IZa-V2-GwS" secondAttribute="trailing" constant="12" id="Vbo-CU-5lK"/>
+                <constraint firstItem="AUp-2j-o4M" firstAttribute="leading" secondItem="IZa-V2-GwS" secondAttribute="leading" id="gy9-fr-bpL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="229" y="89.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifying_glass_dark" width="17" height="17"/>
+    </resources>
+</document>

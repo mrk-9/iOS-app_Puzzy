@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="700" selectionStyle="none" indentationWidth="10" reuseIdentifier="PHAudioPieceCell" rowHeight="65" id="LOy-8d-vZf" customClass="PHAudioPieceCell" customModule="PerzzleStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LOy-8d-vZf" id="cbP-dY-XcR">
+                <frame key="frameInset" width="335" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iz-IY-pY2">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_owner" translatesAutoresizingMaskIntoConstraints="NO" id="Ib5-Qo-0Gd"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hag-By-KNO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="b6z-ck-5uf"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGZ-ip-GHs">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Nz0-EH-GNb"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wy9-h6-P1y"/>
+                                </constraints>
+                                <state key="normal" image="video_start"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Hag-By-KNO" firstAttribute="top" secondItem="6iz-IY-pY2" secondAttribute="top" constant="18" id="90G-Nl-f7V"/>
+                            <constraint firstItem="Hag-By-KNO" firstAttribute="leading" secondItem="aGZ-ip-GHs" secondAttribute="trailing" constant="8" id="9iz-JI-DVh"/>
+                            <constraint firstAttribute="bottom" secondItem="aGZ-ip-GHs" secondAttribute="bottom" constant="8" id="CaR-z5-8ul"/>
+                            <constraint firstAttribute="trailing" secondItem="Hag-By-KNO" secondAttribute="trailing" constant="8" id="El2-ls-szD"/>
+                            <constraint firstAttribute="trailing" secondItem="Ib5-Qo-0Gd" secondAttribute="trailing" id="Rvd-QV-JWk"/>
+                            <constraint firstItem="Ib5-Qo-0Gd" firstAttribute="top" secondItem="6iz-IY-pY2" secondAttribute="top" id="ZI4-ov-RFg"/>
+                            <constraint firstItem="aGZ-ip-GHs" firstAttribute="top" secondItem="6iz-IY-pY2" secondAttribute="top" constant="8" id="Ziu-1w-V7v"/>
+                            <constraint firstAttribute="bottom" secondItem="Ib5-Qo-0Gd" secondAttribute="bottom" id="bZT-FD-2Lo"/>
+                            <constraint firstAttribute="height" constant="90" id="hme-GN-RlM"/>
+                            <constraint firstItem="Ib5-Qo-0Gd" firstAttribute="leading" secondItem="6iz-IY-pY2" secondAttribute="leading" id="kdX-If-5qf"/>
+                            <constraint firstAttribute="width" priority="900" constant="234" id="nn9-w2-cRH"/>
+                            <constraint firstItem="aGZ-ip-GHs" firstAttribute="leading" secondItem="6iz-IY-pY2" secondAttribute="leading" constant="8" id="tFv-7W-gV5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hme-GN-RlM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="6iz-IY-pY2" firstAttribute="leading" secondItem="cbP-dY-XcR" secondAttribute="leading" constant="15" id="1cE-2a-0OF"/>
+                    <constraint firstItem="6iz-IY-pY2" firstAttribute="centerY" secondItem="cbP-dY-XcR" secondAttribute="centerY" id="AEb-ym-KcU"/>
+                    <constraint firstAttribute="bottom" secondItem="6iz-IY-pY2" secondAttribute="bottom" constant="7" id="Dfo-Og-Enn"/>
+                    <constraint firstItem="6iz-IY-pY2" firstAttribute="top" secondItem="cbP-dY-XcR" secondAttribute="top" constant="8" id="Hwb-sJ-NBN"/>
+                    <constraint firstAttribute="bottom" secondItem="6iz-IY-pY2" secondAttribute="bottom" constant="8" id="pDs-yr-iIQ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6iz-IY-pY2" secondAttribute="trailing" constant="40" id="wms-TR-bLe"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="AEb-ym-KcU"/>
+                        <exclude reference="pDs-yr-iIQ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="Ib5-Qo-0Gd" id="MqJ-bd-CLL"/>
+                <outlet property="pieceContentView" destination="6iz-IY-pY2" id="2k9-Rm-V7f"/>
+                <outlet property="playButton" destination="aGZ-ip-GHs" id="8o9-vD-b3I"/>
+                <outlet property="slider" destination="Hag-By-KNO" id="BL1-qM-2UJ"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="340"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bubble_owner" width="44" height="40"/>
+        <image name="video_start" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="700" selectionStyle="none" indentationWidth="10" reuseIdentifier="PHPDFPieceCell" rowHeight="147" id="NeS-kJ-T76" customClass="PHPDFPieceCell" customModule="PerzzleStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NeS-kJ-T76" id="FS2-PZ-0ep">
+                <frame key="frameInset" width="335" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-hd-GP5">
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_owner" translatesAutoresizingMaskIntoConstraints="NO" id="3SB-kg-A2A">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNT-IT-ril">
+                                <string key="text">第２回のコース内容は、いかに
+写真をうまく撮影するかです。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eU9-KQ-KOc">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attachment_pdf" translatesAutoresizingMaskIntoConstraints="NO" id="IsS-MI-AFX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="4HZ-Zs-WPn"/>
+                                    <constraint firstAttribute="height" constant="15" id="ZNe-UH-w9F"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3SB-kg-A2A" firstAttribute="top" secondItem="dCf-hd-GP5" secondAttribute="top" id="66X-QM-Ecn"/>
+                            <constraint firstItem="3SB-kg-A2A" firstAttribute="leading" secondItem="dCf-hd-GP5" secondAttribute="leading" id="A7b-ze-pgM"/>
+                            <constraint firstItem="CNT-IT-ril" firstAttribute="top" secondItem="dCf-hd-GP5" secondAttribute="top" constant="12" id="Dny-lk-eXS"/>
+                            <constraint firstAttribute="trailing" secondItem="3SB-kg-A2A" secondAttribute="trailing" id="Fiu-TK-hGt"/>
+                            <constraint firstItem="CNT-IT-ril" firstAttribute="leading" secondItem="dCf-hd-GP5" secondAttribute="leading" constant="12" id="HEb-Ru-yGz"/>
+                            <constraint firstItem="IsS-MI-AFX" firstAttribute="leading" secondItem="dCf-hd-GP5" secondAttribute="leading" constant="18" id="Ktj-V9-YVG"/>
+                            <constraint firstAttribute="bottom" secondItem="3SB-kg-A2A" secondAttribute="bottom" id="LYi-RE-1Gh"/>
+                            <constraint firstItem="IsS-MI-AFX" firstAttribute="top" secondItem="CNT-IT-ril" secondAttribute="bottom" constant="12" id="PlN-O0-TeW"/>
+                            <constraint firstItem="eU9-KQ-KOc" firstAttribute="centerY" secondItem="IsS-MI-AFX" secondAttribute="centerY" id="YZA-Os-D2W"/>
+                            <constraint firstAttribute="bottom" secondItem="eU9-KQ-KOc" secondAttribute="bottom" constant="12" id="cWY-CJ-nAF"/>
+                            <constraint firstAttribute="trailing" secondItem="CNT-IT-ril" secondAttribute="trailing" constant="12" id="cdb-mg-cPB"/>
+                            <constraint firstItem="eU9-KQ-KOc" firstAttribute="leading" secondItem="IsS-MI-AFX" secondAttribute="trailing" constant="8" id="ieH-q2-v2F"/>
+                            <constraint firstItem="eU9-KQ-KOc" firstAttribute="leading" secondItem="IsS-MI-AFX" secondAttribute="trailing" constant="8" id="l9g-Yd-GYI"/>
+                            <constraint firstAttribute="bottom" secondItem="CNT-IT-ril" secondAttribute="bottom" constant="32" id="sk9-F3-njM"/>
+                            <constraint firstAttribute="trailing" secondItem="eU9-KQ-KOc" secondAttribute="trailing" constant="14" id="xkL-fh-yNk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sk9-F3-njM"/>
+                                <exclude reference="l9g-Yd-GYI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dCf-hd-GP5" secondAttribute="trailing" constant="40" id="89j-I3-PZy"/>
+                    <constraint firstAttribute="bottom" secondItem="dCf-hd-GP5" secondAttribute="bottom" constant="8" id="TDf-f9-jbw"/>
+                    <constraint firstItem="dCf-hd-GP5" firstAttribute="top" secondItem="FS2-PZ-0ep" secondAttribute="top" constant="8" id="XUN-pC-OYC"/>
+                    <constraint firstItem="dCf-hd-GP5" firstAttribute="leading" secondItem="FS2-PZ-0ep" secondAttribute="leading" constant="15" id="ZDd-JY-VRo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="3SB-kg-A2A" id="OMD-Nk-TYc"/>
+                <outlet property="messageLabel" destination="CNT-IT-ril" id="m0R-Z5-hhY"/>
+                <outlet property="pieceContentView" destination="dCf-hd-GP5" id="aJB-at-c7z"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="360.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="attachment_pdf" width="14" height="14"/>
+        <image name="bubble_owner" width="44" height="40"/>
+    </resources>
+</document>

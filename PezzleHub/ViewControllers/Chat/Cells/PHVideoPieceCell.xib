@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="700" selectionStyle="none" indentationWidth="10" reuseIdentifier="PHVideoPieceCell" rowHeight="259" id="Xue-Gz-coS" customClass="PHVideoPieceCell" customModule="PerzzleStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xue-Gz-coS" id="lWA-7J-uZQ">
+                <frame key="frameInset" width="335" height="299"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9el-9l-yHY">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_owner" translatesAutoresizingMaskIntoConstraints="NO" id="AcN-ZX-wv7"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XP-Br-Ib6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E9a-mG-ktM"/>
+                                    <constraint firstAttribute="width" constant="30" id="ZI1-42-EKL"/>
+                                </constraints>
+                                <state key="normal" image="video_start"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wql-AA-gDb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Ko8-Jz-uRp"/>
+                                    <constraint firstAttribute="height" constant="30" id="Q6r-lC-S6w"/>
+                                </constraints>
+                                <state key="normal" image="video_fullscreen"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-Et-pxS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="u8g-GT-le1"/>
+                                </constraints>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODz-NZ-yHy" customClass="PHVideoPlayerView" customModule="PerzzleStudio" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ODz-NZ-yHy" secondAttribute="height" multiplier="20:17" id="vvC-V2-0Dp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cgL-Et-pxS" secondAttribute="bottom" constant="18" id="2zC-19-9r3"/>
+                            <constraint firstAttribute="bottom" secondItem="Wql-AA-gDb" secondAttribute="bottom" constant="8" id="9A4-pg-x4o"/>
+                            <constraint firstAttribute="bottom" secondItem="3XP-Br-Ib6" secondAttribute="bottom" constant="8" id="Bgk-xc-kmP"/>
+                            <constraint firstItem="AcN-ZX-wv7" firstAttribute="leading" secondItem="9el-9l-yHY" secondAttribute="leading" id="PR0-qA-s4A"/>
+                            <constraint firstItem="cgL-Et-pxS" firstAttribute="leading" secondItem="3XP-Br-Ib6" secondAttribute="trailing" constant="8" id="T7Z-4y-Hkm"/>
+                            <constraint firstItem="ODz-NZ-yHy" firstAttribute="leading" secondItem="9el-9l-yHY" secondAttribute="leading" id="UGM-82-ves"/>
+                            <constraint firstAttribute="trailing" secondItem="ODz-NZ-yHy" secondAttribute="trailing" id="V5l-XM-SUE"/>
+                            <constraint firstItem="Wql-AA-gDb" firstAttribute="top" secondItem="ODz-NZ-yHy" secondAttribute="bottom" constant="8" id="XMV-dQ-UDZ"/>
+                            <constraint firstAttribute="trailing" secondItem="AcN-ZX-wv7" secondAttribute="trailing" id="fA6-Ez-HGF"/>
+                            <constraint firstItem="ODz-NZ-yHy" firstAttribute="top" secondItem="9el-9l-yHY" secondAttribute="top" id="g2q-lE-eBd"/>
+                            <constraint firstAttribute="trailing" secondItem="Wql-AA-gDb" secondAttribute="trailing" constant="8" id="gZY-7S-fNy"/>
+                            <constraint firstItem="AcN-ZX-wv7" firstAttribute="top" secondItem="9el-9l-yHY" secondAttribute="top" id="jBk-Gs-hen"/>
+                            <constraint firstAttribute="bottom" secondItem="AcN-ZX-wv7" secondAttribute="bottom" id="nQS-l5-Ncm"/>
+                            <constraint firstItem="Wql-AA-gDb" firstAttribute="leading" secondItem="cgL-Et-pxS" secondAttribute="trailing" constant="8" id="ovc-h8-h8o"/>
+                            <constraint firstItem="3XP-Br-Ib6" firstAttribute="leading" secondItem="9el-9l-yHY" secondAttribute="leading" constant="8" id="x4F-kV-A0U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9el-9l-yHY" secondAttribute="trailing" constant="40" id="Jhv-sj-XMx"/>
+                    <constraint firstItem="9el-9l-yHY" firstAttribute="leading" secondItem="lWA-7J-uZQ" secondAttribute="leading" constant="15" id="M6E-qT-6Kp"/>
+                    <constraint firstAttribute="bottom" secondItem="9el-9l-yHY" secondAttribute="bottom" constant="8" id="OpC-DX-abB"/>
+                    <constraint firstItem="9el-9l-yHY" firstAttribute="top" secondItem="lWA-7J-uZQ" secondAttribute="top" constant="8" id="ZKb-Kc-s5X"/>
+                    <constraint firstItem="9el-9l-yHY" firstAttribute="centerY" secondItem="lWA-7J-uZQ" secondAttribute="centerY" id="aHW-zm-9VU"/>
+                    <constraint firstAttribute="bottom" secondItem="9el-9l-yHY" secondAttribute="bottom" constant="7" id="vda-Fl-Mjk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="OpC-DX-abB"/>
+                        <exclude reference="aHW-zm-9VU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="AcN-ZX-wv7" id="BZf-no-1Fp"/>
+                <outlet property="fullScreenButton" destination="Wql-AA-gDb" id="Grr-jj-acO"/>
+                <outlet property="pieceContentView" destination="9el-9l-yHY" id="RZR-Ct-vOW"/>
+                <outlet property="playButton" destination="3XP-Br-Ib6" id="9xZ-n3-IcF"/>
+                <outlet property="seekSlider" destination="cgL-Et-pxS" id="YTb-vu-vtq"/>
+                <outlet property="videoPlayerContainerView" destination="9el-9l-yHY" id="6Iu-hf-gwW"/>
+                <outlet property="videoPlayerView" destination="ODz-NZ-yHy" id="7na-rb-okD"/>
+                <outlet property="videoPlayerViewLeftConstraint" destination="UGM-82-ves" id="IyX-Y8-KGu"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="437"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bubble_owner" width="44" height="40"/>
+        <image name="video_fullscreen" width="23" height="15"/>
+        <image name="video_start" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed View Controller-->
+        <scene sceneID="GG4-R2-siS">
+            <objects>
+                <viewController storyboardIdentifier="PHFeedViewController" id="rxx-Yl-5FO" customClass="PHFeedViewController" customModule="PezzleHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dzf-96-5Yb"/>
+                        <viewControllerLayoutGuide type="bottom" id="EQ3-ET-4yT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SmI-7b-Q5L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWn-YR-Kkg">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rxx-Yl-5FO" id="yBu-zI-Rzw"/>
+                                    <outlet property="delegate" destination="rxx-Yl-5FO" id="D99-pi-N2A"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Course subsribed. Please tap on Hub in bottom to subscibe the coourses." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxO-uC-syS">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="W40-xE-BFj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p3U-6r-nBt"/>
+                                    <constraint firstAttribute="width" constant="50" id="sfM-24-s1Y"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eP-Mu-7GP">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3eP-Mu-7GP" secondAttribute="height" multiplier="1:1" id="fMJ-Xa-qTr"/>
+                                    <constraint firstAttribute="width" constant="70" id="kv9-xw-ovu"/>
+                                </constraints>
+                                <state key="normal" image="hub_icon"/>
+                                <connections>
+                                    <action selector="hubClick:" destination="rxx-Yl-5FO" eventType="touchUpInside" id="FoA-eu-2Bb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZWn-YR-Kkg" secondAttribute="trailing" id="0gB-8N-atP"/>
+                            <constraint firstItem="EQ3-ET-4yT" firstAttribute="top" secondItem="ZWn-YR-Kkg" secondAttribute="bottom" id="1we-DP-0nn"/>
+                            <constraint firstItem="EQ3-ET-4yT" firstAttribute="top" secondItem="3eP-Mu-7GP" secondAttribute="bottom" constant="8" id="5i0-Gd-P4K"/>
+                            <constraint firstItem="hxO-uC-syS" firstAttribute="leading" secondItem="SmI-7b-Q5L" secondAttribute="leading" constant="20" id="6Bp-54-akS"/>
+                            <constraint firstItem="3eP-Mu-7GP" firstAttribute="top" secondItem="W40-xE-BFj" secondAttribute="bottom" constant="20" id="7He-Tk-akx"/>
+                            <constraint firstAttribute="trailing" secondItem="W40-xE-BFj" secondAttribute="trailing" constant="20" id="81e-fc-ShF"/>
+                            <constraint firstItem="ZWn-YR-Kkg" firstAttribute="leading" secondItem="SmI-7b-Q5L" secondAttribute="leading" id="FXu-6h-epU"/>
+                            <constraint firstItem="ZWn-YR-Kkg" firstAttribute="top" secondItem="SmI-7b-Q5L" secondAttribute="top" id="JTZ-eY-xej"/>
+                            <constraint firstItem="hxO-uC-syS" firstAttribute="top" secondItem="Dzf-96-5Yb" secondAttribute="bottom" constant="100" id="QC3-mk-BEx"/>
+                            <constraint firstAttribute="trailing" secondItem="hxO-uC-syS" secondAttribute="trailing" constant="20" id="xZY-IG-h39"/>
+                            <constraint firstAttribute="trailing" secondItem="3eP-Mu-7GP" secondAttribute="trailing" constant="8" id="xyc-Fa-OvS"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="hxO-uC-syS" id="cXE-Wn-2MC"/>
+                        <outlet property="pointerImage" destination="W40-xE-BFj" id="YVH-U3-uKV"/>
+                        <outlet property="tableView" destination="ZWn-YR-Kkg" id="VNN-QC-bm1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIl-UT-jpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="280"/>
+        </scene>
+        <!--PHHubNavigationController-->
+        <scene sceneID="4Xh-3W-c1P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PHHubNavigationController" referencedIdentifier="PHHubNavigationController" id="Euq-tB-UiR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Hr0-jf-GfA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUY-Kw-jfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007.5" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guide_arrow" width="50" height="50"/>
+        <image name="hub_icon" width="73" height="73"/>
+    </resources>
+</document>

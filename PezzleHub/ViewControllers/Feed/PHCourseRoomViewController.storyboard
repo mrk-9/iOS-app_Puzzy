@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Course Room View Controller-->
+        <scene sceneID="mnU-KV-t0Q">
+            <objects>
+                <viewController storyboardIdentifier="PHCourseRoomViewController" id="ass-A9-rw8" customClass="PHCourseRoomViewController" customModule="PerzzleStudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hb3-Sx-0Aq"/>
+                        <viewControllerLayoutGuide type="bottom" id="VZi-1t-DC3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Er3-3B-OlO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-HL-31k">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="upW-J6-zdX"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="ass-A9-rw8" id="IIA-kZ-Ad0"/>
+                                    <outlet property="delegate" destination="ass-A9-rw8" id="xCE-r1-egP"/>
+                                </connections>
+                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBw-3W-93E">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VZi-1t-DC3" firstAttribute="top" secondItem="s9W-HL-31k" secondAttribute="bottom" id="S4y-6A-mgH"/>
+                            <constraint firstAttribute="trailing" secondItem="XBw-3W-93E" secondAttribute="trailing" id="U1Y-4U-4o3"/>
+                            <constraint firstItem="XBw-3W-93E" firstAttribute="leading" secondItem="s9W-HL-31k" secondAttribute="trailing" id="XYz-Pw-MAO"/>
+                            <constraint firstItem="XBw-3W-93E" firstAttribute="top" secondItem="hb3-Sx-0Aq" secondAttribute="bottom" id="aFi-CB-q6t"/>
+                            <constraint firstItem="s9W-HL-31k" firstAttribute="leading" secondItem="Er3-3B-OlO" secondAttribute="leading" id="adI-14-Yic"/>
+                            <constraint firstItem="s9W-HL-31k" firstAttribute="top" secondItem="Er3-3B-OlO" secondAttribute="top" id="oGb-me-Oeb"/>
+                            <constraint firstItem="VZi-1t-DC3" firstAttribute="top" secondItem="XBw-3W-93E" secondAttribute="bottom" id="qlq-cU-aht"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yym-Oh-eu9">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="dXz-sC-Q8M">
+                            <connections>
+                                <action selector="showSettings:" destination="ass-A9-rw8" id="cl1-Ec-9mI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="chatContainerView" destination="XBw-3W-93E" id="wh9-F5-HDu"/>
+                        <outlet property="tableView" destination="s9W-HL-31k" id="mmb-8X-KeX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6W-8n-mTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="22" height="22"/>
+    </resources>
+</document>

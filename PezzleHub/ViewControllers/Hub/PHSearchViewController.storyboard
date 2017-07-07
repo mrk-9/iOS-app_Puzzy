@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="lJ6-sD-YiQ">
+            <objects>
+                <viewController storyboardIdentifier="PHSearchViewController" automaticallyAdjustsScrollViewInsets="NO" id="cSy-Xz-AOQ" customClass="PHSearchViewController" customModule="PezzleHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TW2-fh-SCb"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJQ-fu-8P7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gJj-Xt-ASP">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQv-Vr-N9W">
+                                <connections>
+                                    <segue destination="NtZ-qq-zkO" kind="embed" identifier="CourseListViewSegue" id="ncw-Hc-jAZ"/>
+                                </connections>
+                            </containerView>
+                            <view hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBq-sW-KxL">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ9-aD-oYr">
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wZ9-aD-oYr" firstAttribute="leading" secondItem="yBq-sW-KxL" secondAttribute="leading" constant="16" id="B4f-T5-kZW"/>
+                                    <constraint firstItem="wZ9-aD-oYr" firstAttribute="top" secondItem="yBq-sW-KxL" secondAttribute="top" constant="32" id="U34-qI-RgZ"/>
+                                    <constraint firstItem="wZ9-aD-oYr" firstAttribute="centerX" secondItem="yBq-sW-KxL" secondAttribute="centerX" id="cgE-il-fuQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wZ9-aD-oYr" secondAttribute="trailing" constant="279" id="xQF-XU-EDH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xQF-XU-EDH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yBq-sW-KxL" firstAttribute="bottom" secondItem="wQv-Vr-N9W" secondAttribute="bottom" id="0E9-KN-16D"/>
+                            <constraint firstItem="yBq-sW-KxL" firstAttribute="top" secondItem="wQv-Vr-N9W" secondAttribute="top" id="BXu-tr-cVa"/>
+                            <constraint firstItem="gJQ-fu-8P7" firstAttribute="top" secondItem="wQv-Vr-N9W" secondAttribute="bottom" id="DTB-Il-ulG"/>
+                            <constraint firstItem="wQv-Vr-N9W" firstAttribute="top" secondItem="TW2-fh-SCb" secondAttribute="bottom" id="Nj4-4e-yqR"/>
+                            <constraint firstAttribute="trailing" secondItem="wQv-Vr-N9W" secondAttribute="trailing" id="Ppl-J5-efT"/>
+                            <constraint firstItem="yBq-sW-KxL" firstAttribute="leading" secondItem="wQv-Vr-N9W" secondAttribute="leading" id="WeD-Lv-qjk"/>
+                            <constraint firstItem="wQv-Vr-N9W" firstAttribute="leading" secondItem="gJj-Xt-ASP" secondAttribute="leading" id="axB-yJ-wNE"/>
+                            <constraint firstItem="yBq-sW-KxL" firstAttribute="trailing" secondItem="wQv-Vr-N9W" secondAttribute="trailing" id="ggX-od-hMA"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="j8K-Zg-0tS">
+                        <barButtonItem key="rightBarButtonItem" image="close_icon" id="nRZ-Rq-rsz">
+                            <connections>
+                                <action selector="dismiss:" destination="cSy-Xz-AOQ" id="6Qi-Tt-GCv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentView" destination="wQv-Vr-N9W" id="lwE-up-J96"/>
+                        <outlet property="contentViewBottomConstraint" destination="DTB-Il-ulG" id="qQt-zW-G5H"/>
+                        <outlet property="emptyLabel" destination="wZ9-aD-oYr" id="N2A-XS-Gog"/>
+                        <outlet property="emptyView" destination="yBq-sW-KxL" id="TJh-2n-b6I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEn-9W-7RL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-222" y="506"/>
+        </scene>
+        <!--Course List Controller-->
+        <scene sceneID="dqn-d8-N1q">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NtZ-qq-zkO" customClass="PHCourseListController" customModule="PezzleHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9wn-Mu-0iI"/>
+                        <viewControllerLayoutGuide type="bottom" id="4GS-sA-Bqr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B3J-H4-Kni">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9A-Cb-hdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close_icon" width="14" height="14"/>
+    </resources>
+</document>

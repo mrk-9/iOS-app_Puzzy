@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="700" selectionStyle="none" indentationWidth="10" reuseIdentifier="PHURLPieceCell" rowHeight="201" id="I7f-9E-7QN" customClass="PHURLPieceCell" customModule="PerzzleStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I7f-9E-7QN" id="8MZ-x5-aV2">
+                <frame key="frameInset" width="335" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfd-0R-AkH">
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_owner" translatesAutoresizingMaskIntoConstraints="NO" id="3qp-dm-lhR">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n1A-IC-0Ba">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n1A-IC-0Ba" secondAttribute="height" multiplier="3:2" id="drg-Gu-EJi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIW-io-HeQ" userLabel="Mask View">
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajF-d2-0E3">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="web_safari_button" translatesAutoresizingMaskIntoConstraints="NO" id="W69-7j-bd4">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Wbz-JA-1Ii"/>
+                                    <constraint firstAttribute="width" secondItem="W69-7j-bd4" secondAttribute="height" id="ZEg-Ei-XZp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="NIW-io-HeQ" firstAttribute="top" secondItem="n1A-IC-0Ba" secondAttribute="top" id="25I-c2-bDV"/>
+                            <constraint firstAttribute="trailing" secondItem="3qp-dm-lhR" secondAttribute="trailing" id="5LW-FC-k3h"/>
+                            <constraint firstItem="NIW-io-HeQ" firstAttribute="trailing" secondItem="n1A-IC-0Ba" secondAttribute="trailing" id="Dh0-1h-jbE"/>
+                            <constraint firstItem="W69-7j-bd4" firstAttribute="leading" secondItem="Xfd-0R-AkH" secondAttribute="leading" constant="16" id="Fgr-tx-xu4"/>
+                            <constraint firstItem="n1A-IC-0Ba" firstAttribute="leading" secondItem="Xfd-0R-AkH" secondAttribute="leading" constant="4" id="GdS-gE-hlD"/>
+                            <constraint firstItem="NIW-io-HeQ" firstAttribute="bottom" secondItem="n1A-IC-0Ba" secondAttribute="bottom" id="Hhj-2E-zam"/>
+                            <constraint firstItem="3qp-dm-lhR" firstAttribute="top" secondItem="Xfd-0R-AkH" secondAttribute="top" id="Oki-6v-yMe"/>
+                            <constraint firstItem="ajF-d2-0E3" firstAttribute="leading" secondItem="W69-7j-bd4" secondAttribute="trailing" constant="8" id="PYh-PD-AmG"/>
+                            <constraint firstItem="n1A-IC-0Ba" firstAttribute="top" secondItem="Xfd-0R-AkH" secondAttribute="top" id="PmG-qU-QlQ"/>
+                            <constraint firstAttribute="bottom" secondItem="n1A-IC-0Ba" secondAttribute="bottom" id="Q6E-we-Ftu"/>
+                            <constraint firstItem="NIW-io-HeQ" firstAttribute="leading" secondItem="n1A-IC-0Ba" secondAttribute="leading" id="Woh-zA-CIA"/>
+                            <constraint firstItem="W69-7j-bd4" firstAttribute="top" secondItem="ajF-d2-0E3" secondAttribute="top" id="XyI-kb-g2M"/>
+                            <constraint firstItem="3qp-dm-lhR" firstAttribute="leading" secondItem="Xfd-0R-AkH" secondAttribute="leading" id="ag1-IO-0PI"/>
+                            <constraint firstItem="ajF-d2-0E3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="n1A-IC-0Ba" secondAttribute="top" id="bjC-xl-CgD"/>
+                            <constraint firstItem="ajF-d2-0E3" firstAttribute="leading" secondItem="Xfd-0R-AkH" secondAttribute="leading" constant="32" id="j3o-eR-bZu"/>
+                            <constraint firstAttribute="bottom" secondItem="ajF-d2-0E3" secondAttribute="bottom" constant="8" id="jvM-Yj-Xdd"/>
+                            <constraint firstAttribute="trailing" secondItem="ajF-d2-0E3" secondAttribute="trailing" constant="16" id="k7q-H9-DFl"/>
+                            <constraint firstItem="W69-7j-bd4" firstAttribute="leading" secondItem="ajF-d2-0E3" secondAttribute="leading" constant="-32" id="nsE-jI-3wO"/>
+                            <constraint firstAttribute="bottom" secondItem="3qp-dm-lhR" secondAttribute="bottom" id="qN5-Z2-O92"/>
+                            <constraint firstItem="ajF-d2-0E3" firstAttribute="top" secondItem="W69-7j-bd4" secondAttribute="bottom" constant="-20" id="u85-YB-P5l"/>
+                            <constraint firstAttribute="trailing" secondItem="n1A-IC-0Ba" secondAttribute="trailing" id="us2-WT-ANW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nsE-jI-3wO"/>
+                                <exclude reference="j3o-eR-bZu"/>
+                                <exclude reference="u85-YB-P5l"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Xfd-0R-AkH" firstAttribute="top" secondItem="8MZ-x5-aV2" secondAttribute="top" constant="8" id="4IL-O1-te0"/>
+                    <constraint firstAttribute="trailing" secondItem="Xfd-0R-AkH" secondAttribute="trailing" constant="40" id="LRx-l4-Ysf"/>
+                    <constraint firstAttribute="bottom" secondItem="Xfd-0R-AkH" secondAttribute="bottom" constant="1000" id="dfP-gS-2gw"/>
+                    <constraint firstItem="Xfd-0R-AkH" firstAttribute="leading" secondItem="8MZ-x5-aV2" secondAttribute="leading" constant="15" id="tM7-JZ-c0c"/>
+                    <constraint firstAttribute="bottom" secondItem="Xfd-0R-AkH" secondAttribute="bottom" constant="8" id="vMd-wl-cji"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dfP-gS-2gw"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="3qp-dm-lhR" id="D1c-2L-CRJ"/>
+                <outlet property="messageLabel" destination="ajF-d2-0E3" id="HdV-wb-ecQ"/>
+                <outlet property="pieceContentView" destination="Xfd-0R-AkH" id="pcf-EO-Rb3"/>
+                <outlet property="webImageMaskView" destination="NIW-io-HeQ" id="zNd-76-Xfw"/>
+                <outlet property="webImageView" destination="n1A-IC-0Ba" id="NZg-45-JEs"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="360.5"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="bubble_owner" width="44" height="40"/>
+        <image name="web_safari_button" width="15" height="17"/>
+    </resources>
+</document>

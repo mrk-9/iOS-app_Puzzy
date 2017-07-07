@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PHTermsAndConditionsCell" rowHeight="135" id="KGk-i7-Jjw" customClass="PHTermsAndConditionsCell" customModule="PerzzleStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="1. 当社のサービスのご利用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58a-ws-xL7">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基本ガイドラインは当社のサービス（当社が提供するサービスとソフトウエアの媒体）をご利用になるすべての方に共通して適用されます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUb-Ip-ggq">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GtE-aM-kdn">
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.92156862750000001" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JLv-4K-BIx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="OUb-Ip-ggq" firstAttribute="trailing" secondItem="58a-ws-xL7" secondAttribute="trailing" id="3Bc-Py-tB7"/>
+                    <constraint firstItem="OUb-Ip-ggq" firstAttribute="leading" secondItem="58a-ws-xL7" secondAttribute="leading" id="75e-C1-d6W"/>
+                    <constraint firstAttribute="trailing" secondItem="58a-ws-xL7" secondAttribute="trailing" constant="14" id="8gk-VR-M9h"/>
+                    <constraint firstItem="OUb-Ip-ggq" firstAttribute="top" secondItem="58a-ws-xL7" secondAttribute="bottom" constant="8" id="FsW-S6-fLn"/>
+                    <constraint firstAttribute="trailing" secondItem="GtE-aM-kdn" secondAttribute="trailing" id="Iy5-Hy-ej0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OUb-Ip-ggq" secondAttribute="bottom" constant="19" id="Jca-yj-2l8"/>
+                    <constraint firstItem="58a-ws-xL7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="NoX-QR-iSF"/>
+                    <constraint firstAttribute="bottom" secondItem="GtE-aM-kdn" secondAttribute="bottom" id="kru-56-s5R"/>
+                    <constraint firstItem="58a-ws-xL7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="o9V-It-Eeb"/>
+                    <constraint firstItem="GtE-aM-kdn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ryl-Ja-qA7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="OUb-Ip-ggq" id="zf7-tK-ODt"/>
+                <outlet property="titleLabel" destination="58a-ws-xL7" id="itl-FD-eob"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="354.5"/>
+        </tableViewCell>
+    </objects>
+</document>

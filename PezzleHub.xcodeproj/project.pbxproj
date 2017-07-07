@@ -1,0 +1,1954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C0641FA1CAD0F31007DB088 /* PHWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0641F91CAD0F31007DB088 /* PHWebViewController.swift */; };
+		2C0641FE1CAD1059007DB088 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0641FD1CAD1059007DB088 /* UIViewControllerExtensions.swift */; };
+		2C0642001CAD1208007DB088 /* PHURLPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0641FF1CAD1208007DB088 /* PHURLPieceCell.swift */; };
+		2C0642021CAD1210007DB088 /* PHURLPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0642011CAD1210007DB088 /* PHURLPieceCell.xib */; };
+		2C0642051CAD19DD007DB088 /* PHImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0642041CAD19DC007DB088 /* PHImageViewController.swift */; };
+		2C0642081CAD1D23007DB088 /* SDWebImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0642071CAD1D23007DB088 /* SDWebImageExtensions.swift */; };
+		2C06420A1CAD2518007DB088 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0642091CAD2518007DB088 /* UIViewExtensions.swift */; };
+		2C1807DD1CD0742800D597E6 /* PHData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807DC1CD0742800D597E6 /* PHData.swift */; };
+		2C1807DF1CD07B2800D597E6 /* ObjectMapperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807DE1CD07B2800D597E6 /* ObjectMapperExtensions.swift */; };
+		2C1807E61CD31DB200D597E6 /* PHCourseRoomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1807E41CD31DB200D597E6 /* PHCourseRoomViewController.storyboard */; };
+		2C1807E71CD31DB200D597E6 /* PHCourseRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807E51CD31DB200D597E6 /* PHCourseRoomViewController.swift */; };
+		2C1807E91CD32E4F00D597E6 /* PHUserPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807E81CD32E4F00D597E6 /* PHUserPieceCell.swift */; };
+		2C1807EB1CD32E5700D597E6 /* PHOwnerPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807EA1CD32E5700D597E6 /* PHOwnerPieceCell.swift */; };
+		2C1807EE1CD32EF700D597E6 /* PHInputAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807ED1CD32EF700D597E6 /* PHInputAnimationView.swift */; };
+		2C1807F61CD6FDC500D597E6 /* PSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807F51CD6FDC500D597E6 /* PSAppDelegate.swift */; };
+		2C1807FD1CD6FDC500D597E6 /* PerzzleStudio.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1807FC1CD6FDC500D597E6 /* PerzzleStudio.xcassets */; };
+		2C1808001CD6FDC500D597E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1807FE1CD6FDC500D597E6 /* LaunchScreen.storyboard */; };
+		2C18080A1CD6FEB300D597E6 /* PSInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1808091CD6FEB300D597E6 /* PSInitialViewController.swift */; };
+		2C18080C1CD6FEBC00D597E6 /* PSInitialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C18080B1CD6FEBC00D597E6 /* PSInitialViewController.storyboard */; };
+		2C1808121CD6FF4C00D597E6 /* PHColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B0C1CB00CDA00DE5B65 /* PHColorTheme.swift */; };
+		2C1808131CD6FF7300D597E6 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E41CACDE0200596C97 /* FoundationExtensions.swift */; };
+		2C1808141CD6FF7300D597E6 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E21CACDDAE00596C97 /* UIKitExtensions.swift */; };
+		2C1808151CD6FF7300D597E6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0642091CAD2518007DB088 /* UIViewExtensions.swift */; };
+		2C1808161CD6FF7300D597E6 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0641FD1CAD1059007DB088 /* UIViewControllerExtensions.swift */; };
+		2C1808181CD6FF7300D597E6 /* Aspects+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B1B1CB0B5D900DE5B65 /* Aspects+Swift.m */; };
+		2C1808191CD6FF7300D597E6 /* GVUserDefaults+PHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B1E1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.m */; };
+		2C18081A1CD6FF7300D597E6 /* ObjectMapperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807DE1CD07B2800D597E6 /* ObjectMapperExtensions.swift */; };
+		2C18081B1CD6FFC500D597E6 /* PHTermsAndConditionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9551CACCD3500596C97 /* PHTermsAndConditionsCell.swift */; };
+		2C18081C1CD6FFC500D597E6 /* PHTermsAndConditionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9561CACCD3500596C97 /* PHTermsAndConditionsCell.xib */; };
+		2C18081D1CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C95C1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.swift */; };
+		2C18081E1CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderChapterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C95D1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.xib */; };
+		2C18081F1CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C95E1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.swift */; };
+		2C1808201CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C95F1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.xib */; };
+		2C1808211CD6FFCA00D597E6 /* PHSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9591CACCD3500596C97 /* PHSignupViewController.swift */; };
+		2C1808221CD6FFCA00D597E6 /* PHSignupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34861CC7611C00C7D576 /* PHSignupViewController.storyboard */; };
+		2C1808231CD6FFCA00D597E6 /* PHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9581CACCD3500596C97 /* PHLoginViewController.swift */; };
+		2C1808241CD6FFCA00D597E6 /* PHLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34881CC7613C00C7D576 /* PHLoginViewController.storyboard */; };
+		2C1808251CD6FFCA00D597E6 /* PHForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9571CACCD3500596C97 /* PHForgotPasswordViewController.swift */; };
+		2C1808261CD6FFCA00D597E6 /* PHForgotPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF348A1CC7614600C7D576 /* PHForgotPasswordViewController.storyboard */; };
+		2C1808271CD6FFCA00D597E6 /* PHTermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C95A1CACCD3500596C97 /* PHTermsAndConditionsViewController.swift */; };
+		2C1808281CD6FFCA00D597E6 /* PHTermsAndConditionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF348C1CC7614D00C7D576 /* PHTermsAndConditionsViewController.storyboard */; };
+		2C1808291CD6FFE000D597E6 /* PHLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B141CB0145200DE5B65 /* PHLogoView.swift */; };
+		2C18082A1CD6FFE000D597E6 /* PHLogoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F7B161CB014A400DE5B65 /* PHLogoView.xib */; };
+		2C18082B1CD6FFF000D597E6 /* PHChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9441CACCD2C00596C97 /* PHChapterView.swift */; };
+		2C18082C1CD6FFF000D597E6 /* PHChapterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9451CACCD2C00596C97 /* PHChapterView.xib */; };
+		2C18082D1CD6FFF300D597E6 /* PHConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A732B78A1C6ADFC0007AC824 /* PHConstants.swift */; };
+		2C1808301CD7005D00D597E6 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C18082F1CD7005D00D597E6 /* Shared.xcassets */; };
+		2C1808311CD700DB00D597E6 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C18082F1CD7005D00D597E6 /* Shared.xcassets */; };
+		2C1808371CD705BF00D597E6 /* PHAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC8DCF1CACC25200887B32 /* PHAPIManager.swift */; };
+		2C1808381CD705BF00D597E6 /* PHData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807DC1CD0742800D597E6 /* PHData.swift */; };
+		2C1808391CD705BF00D597E6 /* PHCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC8DD11CACC3E000887B32 /* PHCourse.swift */; };
+		2C18083A1CD705BF00D597E6 /* PHTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870328361CD2F4DE00B8EC26 /* PHTag.swift */; };
+		2C18083B1CD705BF00D597E6 /* PHChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9D11CACCF0200596C97 /* PHChapter.swift */; };
+		2C18083C1CD705BF00D597E6 /* PHPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9D31CACCF0C00596C97 /* PHPiece.swift */; };
+		2C18083D1CD705BF00D597E6 /* PHUserPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B051CAFF8A700DE5B65 /* PHUserPiece.swift */; };
+		2C18083E1CD705BF00D597E6 /* PHOwnerPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B071CAFF8AE00DE5B65 /* PHOwnerPiece.swift */; };
+		2C18083F1CD705BF00D597E6 /* PHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18D5CD1CCC674A00E1D5B8 /* PHUser.swift */; };
+		2C1808401CD705BF00D597E6 /* PHOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F07891CC9160500235369 /* PHOwner.swift */; };
+		2C1808411CD705BF00D597E6 /* PHCourseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F078D1CC91C6600235369 /* PHCourseCategory.swift */; };
+		2C1808421CD706C600D597E6 /* PHCourseRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807E51CD31DB200D597E6 /* PHCourseRoomViewController.swift */; };
+		2C1808431CD706C600D597E6 /* PHCourseRoomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1807E41CD31DB200D597E6 /* PHCourseRoomViewController.storyboard */; };
+		2C1808441CD706D200D597E6 /* PHCourseRoomChapterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C96E1CACCD3500596C97 /* PHCourseRoomChapterCell.swift */; };
+		2C1808451CD706D200D597E6 /* PHCourseRoomChapterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C96F1CACCD3500596C97 /* PHCourseRoomChapterCell.xib */; };
+		2C1808481CD706DD00D597E6 /* PHPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9DF1CACDCFA00596C97 /* PHPieceCell.swift */; };
+		2C1808491CD706DD00D597E6 /* PHUserPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807E81CD32E4F00D597E6 /* PHUserPieceCell.swift */; };
+		2C18084A1CD706DD00D597E6 /* PHOwnerPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807EA1CD32E5700D597E6 /* PHOwnerPieceCell.swift */; };
+		2C18084F1CD706DD00D597E6 /* PHTextPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9661CACCD3500596C97 /* PHTextPieceCell.swift */; };
+		2C1808501CD706DD00D597E6 /* PHTextPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9671CACCD3500596C97 /* PHTextPieceCell.xib */; };
+		2C1808511CD706DD00D597E6 /* PHUserReactionPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9681CACCD3500596C97 /* PHUserReactionPieceCell.swift */; };
+		2C1808521CD706DD00D597E6 /* PHUserReactionPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9691CACCD3500596C97 /* PHUserReactionPieceCell.xib */; };
+		2C1808531CD706DD00D597E6 /* PHPicturePieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E61CACECEA00596C97 /* PHPicturePieceCell.swift */; };
+		2C1808541CD706DD00D597E6 /* PHPicturePieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E81CACECF400596C97 /* PHPicturePieceCell.xib */; };
+		2C1808551CD706DD00D597E6 /* PHURLPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0641FF1CAD1208007DB088 /* PHURLPieceCell.swift */; };
+		2C1808561CD706DD00D597E6 /* PHURLPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0642011CAD1210007DB088 /* PHURLPieceCell.xib */; };
+		2C1808571CD706DD00D597E6 /* PHAudioPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7AF61CAF955F00DE5B65 /* PHAudioPieceCell.swift */; };
+		2C1808581CD706DD00D597E6 /* PHAudioPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F7AF81CAF957000DE5B65 /* PHAudioPieceCell.xib */; };
+		2C1808591CD706DD00D597E6 /* PHVideoPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7AFA1CAFB27700DE5B65 /* PHVideoPieceCell.swift */; };
+		2C18085A1CD706DD00D597E6 /* PHVideoPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F7AFC1CAFB28100DE5B65 /* PHVideoPieceCell.xib */; };
+		2C18085B1CD706DD00D597E6 /* PHEPubPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C274DBE1CC52CBA0086E5AC /* PHEPubPieceCell.swift */; };
+		2C18085C1CD706DD00D597E6 /* PHEPubPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C274DC01CC52CCC0086E5AC /* PHEPubPieceCell.xib */; };
+		2C18085D1CD706E100D597E6 /* PHInputAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1807ED1CD32EF700D597E6 /* PHInputAnimationView.swift */; };
+		2C18085E1CD706E800D597E6 /* PHChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C96A1CACCD3500596C97 /* PHChatViewController.swift */; };
+		2C18085F1CD706E800D597E6 /* PHChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF349C1CC7645100C7D576 /* PHChatViewController.storyboard */; };
+		2C1808601CD706E800D597E6 /* PHPieceCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B091CB0032500DE5B65 /* PHPieceCellConfiguration.swift */; };
+		2C1808611CD706ED00D597E6 /* PHCourseSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF34A41CC764C100C7D576 /* PHCourseSettingsViewController.swift */; };
+		2C1808621CD706ED00D597E6 /* PHCourseSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34A31CC764C100C7D576 /* PHCourseSettingsViewController.storyboard */; };
+		2C1808631CD706ED00D597E6 /* PHCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF34A01CC764C100C7D576 /* PHCalendarViewController.swift */; };
+		2C1808641CD706ED00D597E6 /* PHCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF349F1CC764C100C7D576 /* PHCalendarViewController.storyboard */; };
+		2C1808651CD706ED00D597E6 /* PHCourseReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF34A21CC764C100C7D576 /* PHCourseReviewsViewController.swift */; };
+		2C1808661CD706ED00D597E6 /* PHCourseReviewsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34A11CC764C100C7D576 /* PHCourseReviewsViewController.storyboard */; };
+		2C18086C1CD7191500D597E6 /* PHWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0641F91CAD0F31007DB088 /* PHWebViewController.swift */; };
+		2C18086D1CD7191500D597E6 /* PHWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF347E1CC7603400C7D576 /* PHWebViewController.storyboard */; };
+		2C18086E1CD7191500D597E6 /* PHImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0642041CAD19DC007DB088 /* PHImageViewController.swift */; };
+		2C18086F1CD7191500D597E6 /* PHImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34801CC760CF00C7D576 /* PHImageViewController.storyboard */; };
+		2C1808701CD7191500D597E6 /* PHQRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DA9FC1CC0962E0037C75D /* PHQRReaderViewController.swift */; };
+		2C1808711CD7191500D597E6 /* PHQRReaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34821CC760E100C7D576 /* PHQRReaderViewController.storyboard */; };
+		2C1808721CD7191500D597E6 /* PHEPubReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C274DC21CC52F620086E5AC /* PHEPubReaderController.swift */; };
+		2C1808731CD7191500D597E6 /* PHEPubReaderController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C274DC41CC52FAF0086E5AC /* PHEPubReaderController.storyboard */; };
+		2C1808741CD7191E00D597E6 /* PHCourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C94A1CACCD2C00596C97 /* PHCourseDetailView.swift */; };
+		2C1808751CD7191E00D597E6 /* PHCourseDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C94B1CACCD2C00596C97 /* PHCourseDetailView.xib */; };
+		2C1808761CD7192200D597E6 /* PHVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7AFF1CAFB40D00DE5B65 /* PHVideoPlayerView.swift */; };
+		2C1808771CD7193300D597E6 /* PHChatFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C97A1CACCD3500596C97 /* PHChatFooter.swift */; };
+		2C1808781CD7193300D597E6 /* PHChatFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C97B1CACCD3500596C97 /* PHChatFooter.xib */; };
+		2C1808791CD7193300D597E6 /* PHChatHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C97C1CACCD3500596C97 /* PHChatHeader.swift */; };
+		2C18087A1CD7193300D597E6 /* PHChatHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C97D1CACCD3500596C97 /* PHChatHeader.xib */; };
+		2C18087B1CD7193300D597E6 /* PHCourseRoomIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9801CACCD3500596C97 /* PHCourseRoomIconView.swift */; };
+		2C18087C1CD7193300D597E6 /* PHCourseRoomIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9811CACCD3600596C97 /* PHCourseRoomIconView.xib */; };
+		2C18087D1CD7193300D597E6 /* PHGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9821CACCD3600596C97 /* PHGraphView.swift */; };
+		2C18087E1CD7193300D597E6 /* PHGraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9831CACCD3600596C97 /* PHGraphView.xib */; };
+		2C1808961CD71BA100D597E6 /* PHFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9701CACCD3500596C97 /* PHFeedCell.swift */; };
+		2C1808971CD71BA100D597E6 /* PHFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9711CACCD3500596C97 /* PHFeedCell.xib */; };
+		2C18089A1CD71CA200D597E6 /* PHDefaultColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1808991CD71CA200D597E6 /* PHDefaultColorTheme.swift */; };
+		2C18089E1CD71CD600D597E6 /* PSDefaultColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18089D1CD71CD600D597E6 /* PSDefaultColorTheme.swift */; };
+		2C18D5CE1CCC674A00E1D5B8 /* PHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18D5CD1CCC674A00E1D5B8 /* PHUser.swift */; };
+		2C274DBF1CC52CBA0086E5AC /* PHEPubPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C274DBE1CC52CBA0086E5AC /* PHEPubPieceCell.swift */; };
+		2C274DC11CC52CCC0086E5AC /* PHEPubPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C274DC01CC52CCC0086E5AC /* PHEPubPieceCell.xib */; };
+		2C274DC31CC52F620086E5AC /* PHEPubReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C274DC21CC52F620086E5AC /* PHEPubReaderController.swift */; };
+		2C274DC51CC52FAF0086E5AC /* PHEPubReaderController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C274DC41CC52FAF0086E5AC /* PHEPubReaderController.storyboard */; };
+		2C2F7AF51CAF953C00DE5B65 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2F7AF41CAF953C00DE5B65 /* AVFoundation.framework */; };
+		2C2F7AF71CAF955F00DE5B65 /* PHAudioPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7AF61CAF955F00DE5B65 /* PHAudioPieceCell.swift */; };
+		2C2F7AF91CAF957000DE5B65 /* PHAudioPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F7AF81CAF957000DE5B65 /* PHAudioPieceCell.xib */; };
+		2C2F7AFB1CAFB27700DE5B65 /* PHVideoPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7AFA1CAFB27700DE5B65 /* PHVideoPieceCell.swift */; };
+		2C2F7AFD1CAFB28100DE5B65 /* PHVideoPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F7AFC1CAFB28100DE5B65 /* PHVideoPieceCell.xib */; };
+		2C2F7B001CAFB40D00DE5B65 /* PHVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7AFF1CAFB40D00DE5B65 /* PHVideoPlayerView.swift */; };
+		2C2F7B021CAFBE6800DE5B65 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2F7B011CAFBE6800DE5B65 /* MediaPlayer.framework */; };
+		2C2F7B061CAFF8A700DE5B65 /* PHUserPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B051CAFF8A700DE5B65 /* PHUserPiece.swift */; };
+		2C2F7B081CAFF8AE00DE5B65 /* PHOwnerPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B071CAFF8AE00DE5B65 /* PHOwnerPiece.swift */; };
+		2C2F7B0A1CB0032500DE5B65 /* PHPieceCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B091CB0032500DE5B65 /* PHPieceCellConfiguration.swift */; };
+		2C2F7B0D1CB00CDA00DE5B65 /* PHColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B0C1CB00CDA00DE5B65 /* PHColorTheme.swift */; };
+		2C2F7B101CB00F6C00DE5B65 /* PHInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B0F1CB00F6C00DE5B65 /* PHInitialViewController.swift */; };
+		2C2F7B151CB0145200DE5B65 /* PHLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B141CB0145200DE5B65 /* PHLogoView.swift */; };
+		2C2F7B171CB014A400DE5B65 /* PHLogoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F7B161CB014A400DE5B65 /* PHLogoView.xib */; };
+		2C2F7B1C1CB0B5D900DE5B65 /* Aspects+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B1B1CB0B5D900DE5B65 /* Aspects+Swift.m */; };
+		2C2F7B1F1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F7B1E1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.m */; };
+		2C3248881D23AD0800EEF8AF /* PHLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FAFD1D211D7F0015DE53 /* PHLoadingTableViewCell.swift */; };
+		2C3248891D23AD0800EEF8AF /* PHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF7FB031D211DB20015DE53 /* PHLoadingTableViewCell.xib */; };
+		2C32488A1D23AD0800EEF8AF /* PHLoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FAFF1D211D910015DE53 /* PHLoadingCollectionViewCell.swift */; };
+		2C32488B1D23AD0800EEF8AF /* PHLoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF7FB051D211DBA0015DE53 /* PHLoadingCollectionViewCell.xib */; };
+		2C32488D1D23ECE400EEF8AF /* PHHubNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32488C1D23ECE400EEF8AF /* PHHubNavigationController.swift */; };
+		2C3DA9FD1CC0962E0037C75D /* PHQRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3DA9FC1CC0962E0037C75D /* PHQRReaderViewController.swift */; };
+		2C3F26E51CD90BDD00BEE957 /* PHCourseDetailViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F07951CC9249300235369 /* PHCourseDetailViewConfiguration.swift */; };
+		2C3F26E71CD90C0800BEE957 /* PHVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDED491CD579B30056B2F5 /* PHVideoPlayerViewController.swift */; };
+		2C3F26E91CD9D8F800BEE957 /* PHRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F26E81CD9D8F800BEE957 /* PHRouter.swift */; };
+		2C3F26EA1CD9D92900BEE957 /* PHRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F26E81CD9D8F800BEE957 /* PHRouter.swift */; };
+		2C3F26EC1CDA0F7C00BEE957 /* PHAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F26EB1CDA0F7C00BEE957 /* PHAuthManager.swift */; };
+		2C3F26ED1CDA102300BEE957 /* PHAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F26EB1CDA0F7C00BEE957 /* PHAuthManager.swift */; };
+		2C4EEDFB1CF5689C00CCFBCA /* PHTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEDFA1CF5689C00CCFBCA /* PHTabView.xib */; };
+		2C4EEDFC1CF56EF300CCFBCA /* PHTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEDFA1CF5689C00CCFBCA /* PHTabView.xib */; };
+		2C4EEE011CF574A900CCFBCA /* PHCategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE001CF574A900CCFBCA /* PHCategoryListViewController.swift */; };
+		2C4EEE031CF574AE00CCFBCA /* PHCategoryListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE021CF574AE00CCFBCA /* PHCategoryListViewController.storyboard */; };
+		2C4EEE161CF5966500CCFBCA /* PHCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0A1CF5966500CCFBCA /* PHCourseCell.swift */; };
+		2C4EEE171CF5966500CCFBCA /* PHCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0B1CF5966500CCFBCA /* PHCourseCell.xib */; };
+		2C4EEE191CF5966500CCFBCA /* PHCourseChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0D1CF5966500CCFBCA /* PHCourseChatListController.swift */; };
+		2C4EEE1A1CF5966500CCFBCA /* PHCourseListAbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0E1CF5966500CCFBCA /* PHCourseListAbstractController.swift */; };
+		2C4EEE1C1CF5966500CCFBCA /* PHCourseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE101CF5966500CCFBCA /* PHCourseListController.swift */; };
+		2C4EEE1D1CF5966500CCFBCA /* PHCourseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE111CF5966500CCFBCA /* PHCourseViewController.storyboard */; };
+		2C4EEE1E1CF5966500CCFBCA /* PHCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE121CF5966500CCFBCA /* PHCourseViewController.swift */; };
+		2C4EEE1F1CF5966500CCFBCA /* PHOwnerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE141CF5966500CCFBCA /* PHOwnerDetailsView.swift */; };
+		2C4EEE201CF5966500CCFBCA /* PHOwnerDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE151CF5966500CCFBCA /* PHOwnerDetailsView.xib */; };
+		2C4EEE221CF5977100CCFBCA /* PHOwnerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE211CF5977100CCFBCA /* PHOwnerListViewController.swift */; };
+		2C4EEE241CF5977900CCFBCA /* PHOwnerListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE231CF5977900CCFBCA /* PHOwnerListViewController.storyboard */; };
+		2C4EEE261CF5A5DD00CCFBCA /* PHMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE251CF5A5DD00CCFBCA /* PHMainViewController.swift */; };
+		2C4EEE271CF5A76000CCFBCA /* PHCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0A1CF5966500CCFBCA /* PHCourseCell.swift */; };
+		2C4EEE281CF5A76000CCFBCA /* PHCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0B1CF5966500CCFBCA /* PHCourseCell.xib */; };
+		2C4EEE291CF5A7AA00CCFBCA /* PHCourseListAbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0E1CF5966500CCFBCA /* PHCourseListAbstractController.swift */; };
+		2C4EEE2A1CF5A7AA00CCFBCA /* PHCourseChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE0D1CF5966500CCFBCA /* PHCourseChatListController.swift */; };
+		2C4EEE2C1CF5A7AA00CCFBCA /* PHCourseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE101CF5966500CCFBCA /* PHCourseListController.swift */; };
+		2C4EEE2E1CF5A7AA00CCFBCA /* PHCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE121CF5966500CCFBCA /* PHCourseViewController.swift */; };
+		2C4EEE2F1CF5A7AA00CCFBCA /* PHCourseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE111CF5966500CCFBCA /* PHCourseViewController.storyboard */; };
+		2C4EEE331CF5BBF300CCFBCA /* PHPDFPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE321CF5BBF300CCFBCA /* PHPDFPieceCell.swift */; };
+		2C4EEE341CF5BBF300CCFBCA /* PHPDFPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EEE321CF5BBF300CCFBCA /* PHPDFPieceCell.swift */; };
+		2C4EEE361CF5BBFA00CCFBCA /* PHPDFPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE351CF5BBFA00CCFBCA /* PHPDFPieceCell.xib */; };
+		2C4EEE371CF5BBFA00CCFBCA /* PHPDFPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EEE351CF5BBFA00CCFBCA /* PHPDFPieceCell.xib */; };
+		2C51D8901CFAF150000D6318 /* PHSettingsViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51D88F1CFAF150000D6318 /* PHSettingsViewControllerExtensions.swift */; };
+		2C51D8931CFAF297000D6318 /* PHSettingsViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51D8921CFAF297000D6318 /* PHSettingsViewControllerExtensions.swift */; };
+		2C51D8951CFAF4ED000D6318 /* PHCourseRoomViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51D8941CFAF4ED000D6318 /* PHCourseRoomViewControllerExtensions.swift */; };
+		2C51D8971CFAF504000D6318 /* PHCourseRoomViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51D8961CFAF504000D6318 /* PHCourseRoomViewControllerExtensions.swift */; };
+		2C51D8981CFB27B6000D6318 /* PHCourseDeliveryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4103B1F1CEB241400FB16BC /* PHCourseDeliveryInfo.swift */; };
+		2C57C1A71CE56863005784F1 /* PHAppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57C1A61CE56862005784F1 /* PHAppSettingsViewController.swift */; };
+		2C57C1A91CE5686B005784F1 /* PHAppSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C57C1A81CE5686B005784F1 /* PHAppSettingsViewController.storyboard */; };
+		2C57C1AB1CE56C6E005784F1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C57C1AA1CE56C6E005784F1 /* Settings.bundle */; };
+		2C680A561D0AADC50049FA95 /* PHCommentCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C680A551D0AADC50049FA95 /* PHCommentCellConfiguration.swift */; };
+		2C680A571D0AADDD0049FA95 /* PHCommentCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C680A551D0AADC50049FA95 /* PHCommentCellConfiguration.swift */; };
+		2C680A5C1D0AAF5A0049FA95 /* PHCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C680A591D0AAF5A0049FA95 /* PHCommentCell.swift */; };
+		2C680A5D1D0AAF5A0049FA95 /* PHCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C680A5A1D0AAF5A0049FA95 /* PHCommentCell.xib */; };
+		2C680A5E1D0AAF640049FA95 /* PHCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C680A591D0AAF5A0049FA95 /* PHCommentCell.swift */; };
+		2C680A5F1D0AAF640049FA95 /* PHCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C680A5A1D0AAF5A0049FA95 /* PHCommentCell.xib */; };
+		2C6D497A1CE6143F002D101E /* PHAppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57C1A61CE56862005784F1 /* PHAppSettingsViewController.swift */; };
+		2C6D497B1CE6144A002D101E /* PHAppSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C57C1A81CE5686B005784F1 /* PHAppSettingsViewController.storyboard */; };
+		2C6D497D1CE61A48002D101E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D497C1CE61A48002D101E /* Settings.bundle */; };
+		2C6D49C11CE9A5C8002D101E /* PHAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872501311CE8121700DAB5B6 /* PHAuthor.swift */; };
+		2C6D49C21CE9A5C8002D101E /* PHComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872501321CE8121700DAB5B6 /* PHComment.swift */; };
+		2C6F078A1CC9160500235369 /* PHOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F07891CC9160500235369 /* PHOwner.swift */; };
+		2C6F078E1CC91C6600235369 /* PHCourseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F078D1CC91C6600235369 /* PHCourseCategory.swift */; };
+		2C6F07961CC9249300235369 /* PHCourseDetailViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F07951CC9249300235369 /* PHCourseDetailViewConfiguration.swift */; };
+		2C982D581D0AC9770019B82E /* PHCourseChatCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C982D571D0AC9770019B82E /* PHCourseChatCellConfiguration.swift */; };
+		2C982D5A1D0AC98C0019B82E /* PHCourseChatCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C982D591D0AC98C0019B82E /* PHCourseChatCellConfiguration.swift */; };
+		2C982D5C1D0AE2220019B82E /* PHChatViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C982D5B1D0AE2220019B82E /* PHChatViewControllerExtensions.swift */; };
+		2C982D5E1D0AE22C0019B82E /* PHChatViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C982D5D1D0AE22C0019B82E /* PHChatViewControllerExtensions.swift */; };
+		2C98660B1D0019C600D216C7 /* PHSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98660A1D0019C600D216C7 /* PHSearchViewController.swift */; };
+		2C98660D1D0019D600D216C7 /* PHSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C98660C1D0019D600D216C7 /* PHSearchViewController.storyboard */; };
+		2CB22A6D1CE0B30900598426 /* PHDefaultColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1808991CD71CA200D597E6 /* PHDefaultColorTheme.swift */; };
+		2CB22A791CE0D01500598426 /* PHApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB22A781CE0D01500598426 /* PHApplicationConfiguration.swift */; };
+		2CB22A7A1CE0D02D00598426 /* PHApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB22A781CE0D01500598426 /* PHApplicationConfiguration.swift */; };
+		2CB22A821CE0E85800598426 /* PSLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB22A801CE0E85800598426 /* PSLoginViewController.storyboard */; };
+		2CB22A831CE0E85800598426 /* PSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB22A811CE0E85800598426 /* PSLoginViewController.swift */; };
+		2CB7700E1CE0338C0096F234 /* PHSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9771CACCD3500596C97 /* PHSettingsViewController.swift */; };
+		2CB7700F1CE033940096F234 /* PHSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34981CC763E900C7D576 /* PHSettingsViewController.storyboard */; };
+		2CB770111CE03A5E0096F234 /* PHInitialViewControllerAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770101CE03A5E0096F234 /* PHInitialViewControllerAccessor.swift */; };
+		2CB770121CE03A670096F234 /* PHInitialViewControllerAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770101CE03A5E0096F234 /* PHInitialViewControllerAccessor.swift */; };
+		2CB770261CE078800096F234 /* PHCustomTransitionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770221CE078800096F234 /* PHCustomTransitionNavigationController.swift */; };
+		2CB770271CE078800096F234 /* PHPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770231CE078800096F234 /* PHPopUpController.swift */; };
+		2CB7702A1CE078840096F234 /* PHCustomTransitionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770221CE078800096F234 /* PHCustomTransitionNavigationController.swift */; };
+		2CB7702B1CE078840096F234 /* PHPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770231CE078800096F234 /* PHPopUpController.swift */; };
+		2CB770321CE078A30096F234 /* PHTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770301CE078A30096F234 /* PHTabViewController.swift */; };
+		2CB770331CE078AA0096F234 /* PHTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770301CE078A30096F234 /* PHTabViewController.swift */; };
+		2CB770361CE079070096F234 /* PHTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770351CE079070096F234 /* PHTabView.swift */; };
+		2CB770371CE0821B0096F234 /* PHTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB770351CE079070096F234 /* PHTabView.swift */; };
+		2CBF347F1CC7603400C7D576 /* PHWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF347E1CC7603400C7D576 /* PHWebViewController.storyboard */; };
+		2CBF34811CC760CF00C7D576 /* PHImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34801CC760CF00C7D576 /* PHImageViewController.storyboard */; };
+		2CBF34831CC760E100C7D576 /* PHQRReaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34821CC760E100C7D576 /* PHQRReaderViewController.storyboard */; };
+		2CBF34851CC7610600C7D576 /* PHInitialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34841CC7610600C7D576 /* PHInitialViewController.storyboard */; };
+		2CBF34871CC7611C00C7D576 /* PHSignupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34861CC7611C00C7D576 /* PHSignupViewController.storyboard */; };
+		2CBF34891CC7613C00C7D576 /* PHLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34881CC7613C00C7D576 /* PHLoginViewController.storyboard */; };
+		2CBF348B1CC7614600C7D576 /* PHForgotPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF348A1CC7614600C7D576 /* PHForgotPasswordViewController.storyboard */; };
+		2CBF348D1CC7614D00C7D576 /* PHTermsAndConditionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF348C1CC7614D00C7D576 /* PHTermsAndConditionsViewController.storyboard */; };
+		2CBF348F1CC7639000C7D576 /* PHFeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF348E1CC7639000C7D576 /* PHFeedViewController.storyboard */; };
+		2CBF34991CC763E900C7D576 /* PHSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34981CC763E900C7D576 /* PHSettingsViewController.storyboard */; };
+		2CBF349D1CC7645100C7D576 /* PHChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF349C1CC7645100C7D576 /* PHChatViewController.storyboard */; };
+		2CBF34A71CC764C100C7D576 /* PHCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF349F1CC764C100C7D576 /* PHCalendarViewController.storyboard */; };
+		2CBF34A81CC764C100C7D576 /* PHCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF34A01CC764C100C7D576 /* PHCalendarViewController.swift */; };
+		2CBF34A91CC764C100C7D576 /* PHCourseReviewsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34A11CC764C100C7D576 /* PHCourseReviewsViewController.storyboard */; };
+		2CBF34AA1CC764C100C7D576 /* PHCourseReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF34A21CC764C100C7D576 /* PHCourseReviewsViewController.swift */; };
+		2CBF34AB1CC764C100C7D576 /* PHCourseSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34A31CC764C100C7D576 /* PHCourseSettingsViewController.storyboard */; };
+		2CBF34AC1CC764C100C7D576 /* PHCourseSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF34A41CC764C100C7D576 /* PHCourseSettingsViewController.swift */; };
+		2CBF34B41CC7660A00C7D576 /* PHOwnerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF34B31CC7660A00C7D576 /* PHOwnerViewController.storyboard */; };
+		2CE0C94C1CACCD2C00596C97 /* PHChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9441CACCD2C00596C97 /* PHChapterView.swift */; };
+		2CE0C94D1CACCD2C00596C97 /* PHChapterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9451CACCD2C00596C97 /* PHChapterView.xib */; };
+		2CE0C9501CACCD2C00596C97 /* PHCourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C94A1CACCD2C00596C97 /* PHCourseDetailView.swift */; };
+		2CE0C9511CACCD2C00596C97 /* PHCourseDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C94B1CACCD2C00596C97 /* PHCourseDetailView.xib */; };
+		2CE0C9961CACCD3600596C97 /* PHTermsAndConditionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9551CACCD3500596C97 /* PHTermsAndConditionsCell.swift */; };
+		2CE0C9971CACCD3600596C97 /* PHTermsAndConditionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9561CACCD3500596C97 /* PHTermsAndConditionsCell.xib */; };
+		2CE0C9981CACCD3600596C97 /* PHForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9571CACCD3500596C97 /* PHForgotPasswordViewController.swift */; };
+		2CE0C9991CACCD3600596C97 /* PHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9581CACCD3500596C97 /* PHLoginViewController.swift */; };
+		2CE0C99A1CACCD3600596C97 /* PHSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9591CACCD3500596C97 /* PHSignupViewController.swift */; };
+		2CE0C99B1CACCD3600596C97 /* PHTermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C95A1CACCD3500596C97 /* PHTermsAndConditionsViewController.swift */; };
+		2CE0C99C1CACCD3600596C97 /* PHTermsAndConditionsHeaderChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C95C1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.swift */; };
+		2CE0C99D1CACCD3600596C97 /* PHTermsAndConditionsHeaderChapterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C95D1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.xib */; };
+		2CE0C99E1CACCD3600596C97 /* PHTermsAndConditionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C95E1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.swift */; };
+		2CE0C99F1CACCD3600596C97 /* PHTermsAndConditionsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C95F1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.xib */; };
+		2CE0C9A41CACCD3600596C97 /* PHTextPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9661CACCD3500596C97 /* PHTextPieceCell.swift */; };
+		2CE0C9A51CACCD3600596C97 /* PHTextPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9671CACCD3500596C97 /* PHTextPieceCell.xib */; };
+		2CE0C9A61CACCD3600596C97 /* PHUserReactionPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9681CACCD3500596C97 /* PHUserReactionPieceCell.swift */; };
+		2CE0C9A71CACCD3600596C97 /* PHUserReactionPieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9691CACCD3500596C97 /* PHUserReactionPieceCell.xib */; };
+		2CE0C9A81CACCD3600596C97 /* PHChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C96A1CACCD3500596C97 /* PHChatViewController.swift */; };
+		2CE0C9A91CACCD3600596C97 /* PHCourseRoomChapterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C96E1CACCD3500596C97 /* PHCourseRoomChapterCell.swift */; };
+		2CE0C9AA1CACCD3600596C97 /* PHCourseRoomChapterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C96F1CACCD3500596C97 /* PHCourseRoomChapterCell.xib */; };
+		2CE0C9AB1CACCD3600596C97 /* PHFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9701CACCD3500596C97 /* PHFeedCell.swift */; };
+		2CE0C9AC1CACCD3600596C97 /* PHFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9711CACCD3500596C97 /* PHFeedCell.xib */; };
+		2CE0C9B11CACCD3600596C97 /* PHFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9761CACCD3500596C97 /* PHFeedViewController.swift */; };
+		2CE0C9B21CACCD3600596C97 /* PHSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9771CACCD3500596C97 /* PHSettingsViewController.swift */; };
+		2CE0C9B41CACCD3600596C97 /* PHChatFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C97A1CACCD3500596C97 /* PHChatFooter.swift */; };
+		2CE0C9B51CACCD3600596C97 /* PHChatFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C97B1CACCD3500596C97 /* PHChatFooter.xib */; };
+		2CE0C9B61CACCD3600596C97 /* PHChatHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C97C1CACCD3500596C97 /* PHChatHeader.swift */; };
+		2CE0C9B71CACCD3600596C97 /* PHChatHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C97D1CACCD3500596C97 /* PHChatHeader.xib */; };
+		2CE0C9BA1CACCD3600596C97 /* PHCourseRoomIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9801CACCD3500596C97 /* PHCourseRoomIconView.swift */; };
+		2CE0C9BB1CACCD3600596C97 /* PHCourseRoomIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9811CACCD3600596C97 /* PHCourseRoomIconView.xib */; };
+		2CE0C9BC1CACCD3600596C97 /* PHGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9821CACCD3600596C97 /* PHGraphView.swift */; };
+		2CE0C9BD1CACCD3600596C97 /* PHGraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9831CACCD3600596C97 /* PHGraphView.xib */; };
+		2CE0C9C01CACCD3600596C97 /* PHCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9881CACCD3600596C97 /* PHCategoryCell.swift */; };
+		2CE0C9C11CACCD3600596C97 /* PHCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9891CACCD3600596C97 /* PHCategoryCell.xib */; };
+		2CE0C9C21CACCD3600596C97 /* PHOwnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C98A1CACCD3600596C97 /* PHOwnerCell.swift */; };
+		2CE0C9C31CACCD3600596C97 /* PHOwnerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C98B1CACCD3600596C97 /* PHOwnerCell.xib */; };
+		2CE0C9C41CACCD3600596C97 /* PHOwnerCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C98C1CACCD3600596C97 /* PHOwnerCourseCell.swift */; };
+		2CE0C9C51CACCD3600596C97 /* PHOwnerCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C98D1CACCD3600596C97 /* PHOwnerCourseCell.xib */; };
+		2CE0C9C61CACCD3600596C97 /* PHHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C98E1CACCD3600596C97 /* PHHubViewController.swift */; };
+		2CE0C9C81CACCD3600596C97 /* PHOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9901CACCD3600596C97 /* PHOwnerViewController.swift */; };
+		2CE0C9CB1CACCD3600596C97 /* PHSearchBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9941CACCD3600596C97 /* PHSearchBarContainerView.swift */; };
+		2CE0C9CC1CACCD3600596C97 /* PHSearchBarContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9951CACCD3600596C97 /* PHSearchBarContainerView.xib */; };
+		2CE0C9D21CACCF0200596C97 /* PHChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9D11CACCF0200596C97 /* PHChapter.swift */; };
+		2CE0C9D41CACCF0C00596C97 /* PHPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9D31CACCF0C00596C97 /* PHPiece.swift */; };
+		2CE0C9E01CACDCFA00596C97 /* PHPieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9DF1CACDCFA00596C97 /* PHPieceCell.swift */; };
+		2CE0C9E31CACDDAE00596C97 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E21CACDDAE00596C97 /* UIKitExtensions.swift */; };
+		2CE0C9E51CACDE0200596C97 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E41CACDE0200596C97 /* FoundationExtensions.swift */; };
+		2CE0C9E71CACECEA00596C97 /* PHPicturePieceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E61CACECEA00596C97 /* PHPicturePieceCell.swift */; };
+		2CE0C9E91CACECF400596C97 /* PHPicturePieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE0C9E81CACECF400596C97 /* PHPicturePieceCell.xib */; };
+		2CF7FAF71D20FDA50015DE53 /* PHPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FAF61D20FDA50015DE53 /* PHPaginator.swift */; };
+		2CF7FAF81D20FDA80015DE53 /* PHPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FAF61D20FDA50015DE53 /* PHPaginator.swift */; };
+		2CF7FAFE1D211D7F0015DE53 /* PHLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FAFD1D211D7F0015DE53 /* PHLoadingTableViewCell.swift */; };
+		2CF7FB001D211D910015DE53 /* PHLoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FAFF1D211D910015DE53 /* PHLoadingCollectionViewCell.swift */; };
+		2CF7FB041D211DB20015DE53 /* PHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF7FB031D211DB20015DE53 /* PHLoadingTableViewCell.xib */; };
+		2CF7FB061D211DBA0015DE53 /* PHLoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF7FB051D211DBA0015DE53 /* PHLoadingCollectionViewCell.xib */; };
+		2CF832231D0E506E002F29AE /* PHChatUserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF832221D0E506E002F29AE /* PHChatUserInputView.swift */; };
+		2CF832241D0E5071002F29AE /* PHChatUserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF832221D0E506E002F29AE /* PHChatUserInputView.swift */; };
+		2CFC8DD01CACC25200887B32 /* PHAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC8DCF1CACC25200887B32 /* PHAPIManager.swift */; };
+		2CFC8DD21CACC3E000887B32 /* PHCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC8DD11CACC3E000887B32 /* PHCourse.swift */; };
+		66D6EECC1DE7F53100147533 /* SDWebImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0642071CAD1D23007DB088 /* SDWebImageExtensions.swift */; };
+		870328371CD2F4DE00B8EC26 /* PHTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870328361CD2F4DE00B8EC26 /* PHTag.swift */; };
+		872501331CE8121700DAB5B6 /* PHAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872501311CE8121700DAB5B6 /* PHAuthor.swift */; };
+		872501341CE8121700DAB5B6 /* PHComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872501321CE8121700DAB5B6 /* PHComment.swift */; };
+		87CDED4A1CD579B30056B2F5 /* PHVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDED491CD579B30056B2F5 /* PHVideoPlayerViewController.swift */; };
+		96B75F19C102CC0834988245 /* Pods_PerzzleStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDA0EEB77010DB1D96988D8 /* Pods_PerzzleStudio.framework */; };
+		A732B7491C6AB023007AC824 /* PHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A732B7481C6AB023007AC824 /* PHAppDelegate.swift */; };
+		A732B7531C6AB023007AC824 /* PerzzleHub.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A732B7521C6AB023007AC824 /* PerzzleHub.xcassets */; };
+		A732B7561C6AB023007AC824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A732B7541C6AB023007AC824 /* LaunchScreen.storyboard */; };
+		A732B78B1C6ADFC0007AC824 /* PHConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A732B78A1C6ADFC0007AC824 /* PHConstants.swift */; };
+		B4103B201CEB241400FB16BC /* PHCourseDeliveryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4103B1F1CEB241400FB16BC /* PHCourseDeliveryInfo.swift */; };
+		B42D09B71CFFEFAE00E29093 /* PHBaseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D09B61CFFEFAE00E29093 /* PHBaseLoginViewController.swift */; };
+		B42D09B81CFFF83B00E29093 /* PHBaseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D09B61CFFEFAE00E29093 /* PHBaseLoginViewController.swift */; };
+		B4C201851D3627B600584E04 /* PHHubNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C201841D3627B600584E04 /* PHHubNavigationController.storyboard */; };
+		B4C201871D36C4BD00584E04 /* PHTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C201861D36C4BD00584E04 /* PHTransitionManager.swift */; };
+		BFD7EA841DC1ECED006DC922 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD7EA831DC1ECED006DC922 /* UserNotifications.framework */; };
+		DE331AAC9934E7A76CD67600 /* Pods_PezzleHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE55DE562849CC5D73B215AD /* Pods_PezzleHub.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C0641F91CAD0F31007DB088 /* PHWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHWebViewController.swift; sourceTree = "<group>"; };
+		2C0641FD1CAD1059007DB088 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C0641FF1CAD1208007DB088 /* PHURLPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHURLPieceCell.swift; sourceTree = "<group>"; };
+		2C0642011CAD1210007DB088 /* PHURLPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHURLPieceCell.xib; sourceTree = "<group>"; };
+		2C0642041CAD19DC007DB088 /* PHImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHImageViewController.swift; sourceTree = "<group>"; };
+		2C0642071CAD1D23007DB088 /* SDWebImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWebImageExtensions.swift; sourceTree = "<group>"; };
+		2C0642091CAD2518007DB088 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		2C1807DA1CD05E7E00D597E6 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = ../readme.md; sourceTree = "<group>"; };
+		2C1807DC1CD0742800D597E6 /* PHData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHData.swift; sourceTree = "<group>"; };
+		2C1807DE1CD07B2800D597E6 /* ObjectMapperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperExtensions.swift; sourceTree = "<group>"; };
+		2C1807E41CD31DB200D597E6 /* PHCourseRoomViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHCourseRoomViewController.storyboard; sourceTree = "<group>"; };
+		2C1807E51CD31DB200D597E6 /* PHCourseRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseRoomViewController.swift; sourceTree = "<group>"; };
+		2C1807E81CD32E4F00D597E6 /* PHUserPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHUserPieceCell.swift; sourceTree = "<group>"; };
+		2C1807EA1CD32E5700D597E6 /* PHOwnerPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerPieceCell.swift; sourceTree = "<group>"; };
+		2C1807ED1CD32EF700D597E6 /* PHInputAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHInputAnimationView.swift; sourceTree = "<group>"; };
+		2C1807F31CD6FDC400D597E6 /* PerzzleStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerzzleStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1807F51CD6FDC500D597E6 /* PSAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAppDelegate.swift; sourceTree = "<group>"; };
+		2C1807FC1CD6FDC500D597E6 /* PerzzleStudio.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PerzzleStudio.xcassets; sourceTree = "<group>"; };
+		2C1807FF1CD6FDC500D597E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C1808011CD6FDC500D597E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1808091CD6FEB300D597E6 /* PSInitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSInitialViewController.swift; sourceTree = "<group>"; };
+		2C18080B1CD6FEBC00D597E6 /* PSInitialViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PSInitialViewController.storyboard; sourceTree = "<group>"; };
+		2C18082F1CD7005D00D597E6 /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
+		2C1808691CD718BF00D597E6 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		2C1808991CD71CA200D597E6 /* PHDefaultColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHDefaultColorTheme.swift; sourceTree = "<group>"; };
+		2C18089D1CD71CD600D597E6 /* PSDefaultColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSDefaultColorTheme.swift; sourceTree = "<group>"; };
+		2C18D5CD1CCC674A00E1D5B8 /* PHUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHUser.swift; sourceTree = "<group>"; };
+		2C274DBE1CC52CBA0086E5AC /* PHEPubPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHEPubPieceCell.swift; sourceTree = "<group>"; };
+		2C274DC01CC52CCC0086E5AC /* PHEPubPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHEPubPieceCell.xib; sourceTree = "<group>"; };
+		2C274DC21CC52F620086E5AC /* PHEPubReaderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHEPubReaderController.swift; sourceTree = "<group>"; };
+		2C274DC41CC52FAF0086E5AC /* PHEPubReaderController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHEPubReaderController.storyboard; sourceTree = "<group>"; };
+		2C2F7AF41CAF953C00DE5B65 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C2F7AF61CAF955F00DE5B65 /* PHAudioPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAudioPieceCell.swift; sourceTree = "<group>"; };
+		2C2F7AF81CAF957000DE5B65 /* PHAudioPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHAudioPieceCell.xib; sourceTree = "<group>"; };
+		2C2F7AFA1CAFB27700DE5B65 /* PHVideoPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHVideoPieceCell.swift; sourceTree = "<group>"; };
+		2C2F7AFC1CAFB28100DE5B65 /* PHVideoPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHVideoPieceCell.xib; sourceTree = "<group>"; };
+		2C2F7AFF1CAFB40D00DE5B65 /* PHVideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHVideoPlayerView.swift; sourceTree = "<group>"; };
+		2C2F7B011CAFBE6800DE5B65 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2C2F7B051CAFF8A700DE5B65 /* PHUserPiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHUserPiece.swift; sourceTree = "<group>"; };
+		2C2F7B071CAFF8AE00DE5B65 /* PHOwnerPiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerPiece.swift; sourceTree = "<group>"; };
+		2C2F7B091CB0032500DE5B65 /* PHPieceCellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPieceCellConfiguration.swift; sourceTree = "<group>"; };
+		2C2F7B0C1CB00CDA00DE5B65 /* PHColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHColorTheme.swift; sourceTree = "<group>"; };
+		2C2F7B0F1CB00F6C00DE5B65 /* PHInitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHInitialViewController.swift; sourceTree = "<group>"; };
+		2C2F7B141CB0145200DE5B65 /* PHLogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHLogoView.swift; sourceTree = "<group>"; };
+		2C2F7B161CB014A400DE5B65 /* PHLogoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLogoView.xib; sourceTree = "<group>"; };
+		2C2F7B1A1CB0B5D900DE5B65 /* Aspects+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Aspects+Swift.h"; sourceTree = "<group>"; };
+		2C2F7B1B1CB0B5D900DE5B65 /* Aspects+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Aspects+Swift.m"; sourceTree = "<group>"; };
+		2C2F7B1D1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+PHAdditions.h"; sourceTree = "<group>"; };
+		2C2F7B1E1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+PHAdditions.m"; sourceTree = "<group>"; };
+		2C32488C1D23ECE400EEF8AF /* PHHubNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHHubNavigationController.swift; sourceTree = "<group>"; };
+		2C3DA9FC1CC0962E0037C75D /* PHQRReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHQRReaderViewController.swift; sourceTree = "<group>"; };
+		2C3F26E81CD9D8F800BEE957 /* PHRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHRouter.swift; sourceTree = "<group>"; };
+		2C3F26EB1CDA0F7C00BEE957 /* PHAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAuthManager.swift; sourceTree = "<group>"; };
+		2C4EEDFA1CF5689C00CCFBCA /* PHTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHTabView.xib; sourceTree = "<group>"; };
+		2C4EEE001CF574A900CCFBCA /* PHCategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCategoryListViewController.swift; sourceTree = "<group>"; };
+		2C4EEE021CF574AE00CCFBCA /* PHCategoryListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHCategoryListViewController.storyboard; sourceTree = "<group>"; };
+		2C4EEE0A1CF5966500CCFBCA /* PHCourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseCell.swift; sourceTree = "<group>"; };
+		2C4EEE0B1CF5966500CCFBCA /* PHCourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHCourseCell.xib; sourceTree = "<group>"; };
+		2C4EEE0D1CF5966500CCFBCA /* PHCourseChatListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseChatListController.swift; sourceTree = "<group>"; };
+		2C4EEE0E1CF5966500CCFBCA /* PHCourseListAbstractController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseListAbstractController.swift; sourceTree = "<group>"; };
+		2C4EEE101CF5966500CCFBCA /* PHCourseListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseListController.swift; sourceTree = "<group>"; };
+		2C4EEE111CF5966500CCFBCA /* PHCourseViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHCourseViewController.storyboard; sourceTree = "<group>"; };
+		2C4EEE121CF5966500CCFBCA /* PHCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseViewController.swift; sourceTree = "<group>"; };
+		2C4EEE141CF5966500CCFBCA /* PHOwnerDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerDetailsView.swift; sourceTree = "<group>"; };
+		2C4EEE151CF5966500CCFBCA /* PHOwnerDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHOwnerDetailsView.xib; sourceTree = "<group>"; };
+		2C4EEE211CF5977100CCFBCA /* PHOwnerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerListViewController.swift; sourceTree = "<group>"; };
+		2C4EEE231CF5977900CCFBCA /* PHOwnerListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHOwnerListViewController.storyboard; sourceTree = "<group>"; };
+		2C4EEE251CF5A5DD00CCFBCA /* PHMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHMainViewController.swift; sourceTree = "<group>"; };
+		2C4EEE321CF5BBF300CCFBCA /* PHPDFPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPDFPieceCell.swift; sourceTree = "<group>"; };
+		2C4EEE351CF5BBFA00CCFBCA /* PHPDFPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHPDFPieceCell.xib; sourceTree = "<group>"; };
+		2C51D88F1CFAF150000D6318 /* PHSettingsViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSettingsViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C51D8921CFAF297000D6318 /* PHSettingsViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSettingsViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C51D8941CFAF4ED000D6318 /* PHCourseRoomViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseRoomViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C51D8961CFAF504000D6318 /* PHCourseRoomViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseRoomViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C57C1A61CE56862005784F1 /* PHAppSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAppSettingsViewController.swift; sourceTree = "<group>"; };
+		2C57C1A81CE5686B005784F1 /* PHAppSettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHAppSettingsViewController.storyboard; sourceTree = "<group>"; };
+		2C57C1AA1CE56C6E005784F1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2C680A551D0AADC50049FA95 /* PHCommentCellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCommentCellConfiguration.swift; sourceTree = "<group>"; };
+		2C680A591D0AAF5A0049FA95 /* PHCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCommentCell.swift; sourceTree = "<group>"; };
+		2C680A5A1D0AAF5A0049FA95 /* PHCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHCommentCell.xib; sourceTree = "<group>"; };
+		2C6D497C1CE61A48002D101E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2C6F07891CC9160500235369 /* PHOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwner.swift; sourceTree = "<group>"; };
+		2C6F078D1CC91C6600235369 /* PHCourseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseCategory.swift; sourceTree = "<group>"; };
+		2C6F07951CC9249300235369 /* PHCourseDetailViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseDetailViewConfiguration.swift; sourceTree = "<group>"; };
+		2C982D571D0AC9770019B82E /* PHCourseChatCellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseChatCellConfiguration.swift; sourceTree = "<group>"; };
+		2C982D591D0AC98C0019B82E /* PHCourseChatCellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseChatCellConfiguration.swift; sourceTree = "<group>"; };
+		2C982D5B1D0AE2220019B82E /* PHChatViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChatViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C982D5D1D0AE22C0019B82E /* PHChatViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChatViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2C98660A1D0019C600D216C7 /* PHSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSearchViewController.swift; sourceTree = "<group>"; };
+		2C98660C1D0019D600D216C7 /* PHSearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHSearchViewController.storyboard; sourceTree = "<group>"; };
+		2CB22A781CE0D01500598426 /* PHApplicationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHApplicationConfiguration.swift; sourceTree = "<group>"; };
+		2CB22A801CE0E85800598426 /* PSLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PSLoginViewController.storyboard; sourceTree = "<group>"; };
+		2CB22A811CE0E85800598426 /* PSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSLoginViewController.swift; sourceTree = "<group>"; };
+		2CB770101CE03A5E0096F234 /* PHInitialViewControllerAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHInitialViewControllerAccessor.swift; sourceTree = "<group>"; };
+		2CB770221CE078800096F234 /* PHCustomTransitionNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCustomTransitionNavigationController.swift; sourceTree = "<group>"; };
+		2CB770231CE078800096F234 /* PHPopUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPopUpController.swift; sourceTree = "<group>"; };
+		2CB770301CE078A30096F234 /* PHTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTabViewController.swift; sourceTree = "<group>"; };
+		2CB770351CE079070096F234 /* PHTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTabView.swift; sourceTree = "<group>"; };
+		2CBF347E1CC7603400C7D576 /* PHWebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHWebViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34801CC760CF00C7D576 /* PHImageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHImageViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34821CC760E100C7D576 /* PHQRReaderViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHQRReaderViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34841CC7610600C7D576 /* PHInitialViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHInitialViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34861CC7611C00C7D576 /* PHSignupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHSignupViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34881CC7613C00C7D576 /* PHLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHLoginViewController.storyboard; sourceTree = "<group>"; };
+		2CBF348A1CC7614600C7D576 /* PHForgotPasswordViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHForgotPasswordViewController.storyboard; sourceTree = "<group>"; };
+		2CBF348C1CC7614D00C7D576 /* PHTermsAndConditionsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHTermsAndConditionsViewController.storyboard; sourceTree = "<group>"; };
+		2CBF348E1CC7639000C7D576 /* PHFeedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHFeedViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34981CC763E900C7D576 /* PHSettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHSettingsViewController.storyboard; sourceTree = "<group>"; };
+		2CBF349C1CC7645100C7D576 /* PHChatViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHChatViewController.storyboard; sourceTree = "<group>"; };
+		2CBF349F1CC764C100C7D576 /* PHCalendarViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHCalendarViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34A01CC764C100C7D576 /* PHCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCalendarViewController.swift; sourceTree = "<group>"; };
+		2CBF34A11CC764C100C7D576 /* PHCourseReviewsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHCourseReviewsViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34A21CC764C100C7D576 /* PHCourseReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseReviewsViewController.swift; sourceTree = "<group>"; };
+		2CBF34A31CC764C100C7D576 /* PHCourseSettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHCourseSettingsViewController.storyboard; sourceTree = "<group>"; };
+		2CBF34A41CC764C100C7D576 /* PHCourseSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseSettingsViewController.swift; sourceTree = "<group>"; };
+		2CBF34B31CC7660A00C7D576 /* PHOwnerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHOwnerViewController.storyboard; sourceTree = "<group>"; };
+		2CE0C9441CACCD2C00596C97 /* PHChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChapterView.swift; sourceTree = "<group>"; };
+		2CE0C9451CACCD2C00596C97 /* PHChapterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHChapterView.xib; sourceTree = "<group>"; };
+		2CE0C94A1CACCD2C00596C97 /* PHCourseDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseDetailView.swift; sourceTree = "<group>"; };
+		2CE0C94B1CACCD2C00596C97 /* PHCourseDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHCourseDetailView.xib; sourceTree = "<group>"; };
+		2CE0C9551CACCD3500596C97 /* PHTermsAndConditionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTermsAndConditionsCell.swift; sourceTree = "<group>"; };
+		2CE0C9561CACCD3500596C97 /* PHTermsAndConditionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHTermsAndConditionsCell.xib; sourceTree = "<group>"; };
+		2CE0C9571CACCD3500596C97 /* PHForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		2CE0C9581CACCD3500596C97 /* PHLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHLoginViewController.swift; sourceTree = "<group>"; };
+		2CE0C9591CACCD3500596C97 /* PHSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSignupViewController.swift; sourceTree = "<group>"; };
+		2CE0C95A1CACCD3500596C97 /* PHTermsAndConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		2CE0C95C1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTermsAndConditionsHeaderChapterView.swift; sourceTree = "<group>"; };
+		2CE0C95D1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHTermsAndConditionsHeaderChapterView.xib; sourceTree = "<group>"; };
+		2CE0C95E1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTermsAndConditionsHeaderView.swift; sourceTree = "<group>"; };
+		2CE0C95F1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHTermsAndConditionsHeaderView.xib; sourceTree = "<group>"; };
+		2CE0C9661CACCD3500596C97 /* PHTextPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTextPieceCell.swift; sourceTree = "<group>"; };
+		2CE0C9671CACCD3500596C97 /* PHTextPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHTextPieceCell.xib; sourceTree = "<group>"; };
+		2CE0C9681CACCD3500596C97 /* PHUserReactionPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHUserReactionPieceCell.swift; sourceTree = "<group>"; };
+		2CE0C9691CACCD3500596C97 /* PHUserReactionPieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHUserReactionPieceCell.xib; sourceTree = "<group>"; };
+		2CE0C96A1CACCD3500596C97 /* PHChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChatViewController.swift; sourceTree = "<group>"; };
+		2CE0C96E1CACCD3500596C97 /* PHCourseRoomChapterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseRoomChapterCell.swift; sourceTree = "<group>"; };
+		2CE0C96F1CACCD3500596C97 /* PHCourseRoomChapterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHCourseRoomChapterCell.xib; sourceTree = "<group>"; };
+		2CE0C9701CACCD3500596C97 /* PHFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHFeedCell.swift; sourceTree = "<group>"; };
+		2CE0C9711CACCD3500596C97 /* PHFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHFeedCell.xib; sourceTree = "<group>"; };
+		2CE0C9761CACCD3500596C97 /* PHFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHFeedViewController.swift; sourceTree = "<group>"; };
+		2CE0C9771CACCD3500596C97 /* PHSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSettingsViewController.swift; sourceTree = "<group>"; };
+		2CE0C97A1CACCD3500596C97 /* PHChatFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChatFooter.swift; sourceTree = "<group>"; };
+		2CE0C97B1CACCD3500596C97 /* PHChatFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHChatFooter.xib; sourceTree = "<group>"; };
+		2CE0C97C1CACCD3500596C97 /* PHChatHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChatHeader.swift; sourceTree = "<group>"; };
+		2CE0C97D1CACCD3500596C97 /* PHChatHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHChatHeader.xib; sourceTree = "<group>"; };
+		2CE0C9801CACCD3500596C97 /* PHCourseRoomIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseRoomIconView.swift; sourceTree = "<group>"; };
+		2CE0C9811CACCD3600596C97 /* PHCourseRoomIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHCourseRoomIconView.xib; sourceTree = "<group>"; };
+		2CE0C9821CACCD3600596C97 /* PHGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHGraphView.swift; sourceTree = "<group>"; };
+		2CE0C9831CACCD3600596C97 /* PHGraphView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHGraphView.xib; sourceTree = "<group>"; };
+		2CE0C9881CACCD3600596C97 /* PHCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCategoryCell.swift; sourceTree = "<group>"; };
+		2CE0C9891CACCD3600596C97 /* PHCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHCategoryCell.xib; sourceTree = "<group>"; };
+		2CE0C98A1CACCD3600596C97 /* PHOwnerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerCell.swift; sourceTree = "<group>"; };
+		2CE0C98B1CACCD3600596C97 /* PHOwnerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHOwnerCell.xib; sourceTree = "<group>"; };
+		2CE0C98C1CACCD3600596C97 /* PHOwnerCourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerCourseCell.swift; sourceTree = "<group>"; };
+		2CE0C98D1CACCD3600596C97 /* PHOwnerCourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHOwnerCourseCell.xib; sourceTree = "<group>"; };
+		2CE0C98E1CACCD3600596C97 /* PHHubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHHubViewController.swift; sourceTree = "<group>"; };
+		2CE0C9901CACCD3600596C97 /* PHOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHOwnerViewController.swift; sourceTree = "<group>"; };
+		2CE0C9941CACCD3600596C97 /* PHSearchBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHSearchBarContainerView.swift; sourceTree = "<group>"; };
+		2CE0C9951CACCD3600596C97 /* PHSearchBarContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHSearchBarContainerView.xib; sourceTree = "<group>"; };
+		2CE0C9D11CACCF0200596C97 /* PHChapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChapter.swift; sourceTree = "<group>"; };
+		2CE0C9D31CACCF0C00596C97 /* PHPiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPiece.swift; sourceTree = "<group>"; };
+		2CE0C9DF1CACDCFA00596C97 /* PHPieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPieceCell.swift; sourceTree = "<group>"; };
+		2CE0C9E21CACDDAE00596C97 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		2CE0C9E41CACDE0200596C97 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		2CE0C9E61CACECEA00596C97 /* PHPicturePieceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPicturePieceCell.swift; sourceTree = "<group>"; };
+		2CE0C9E81CACECF400596C97 /* PHPicturePieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHPicturePieceCell.xib; sourceTree = "<group>"; };
+		2CF0F9BB1CB777D4006AF8BE /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		2CF7FAF61D20FDA50015DE53 /* PHPaginator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPaginator.swift; sourceTree = "<group>"; };
+		2CF7FAFD1D211D7F0015DE53 /* PHLoadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHLoadingTableViewCell.swift; sourceTree = "<group>"; };
+		2CF7FAFF1D211D910015DE53 /* PHLoadingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHLoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		2CF7FB031D211DB20015DE53 /* PHLoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLoadingTableViewCell.xib; sourceTree = "<group>"; };
+		2CF7FB051D211DBA0015DE53 /* PHLoadingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLoadingCollectionViewCell.xib; sourceTree = "<group>"; };
+		2CF832221D0E506E002F29AE /* PHChatUserInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHChatUserInputView.swift; sourceTree = "<group>"; };
+		2CFC8DCF1CACC25200887B32 /* PHAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAPIManager.swift; sourceTree = "<group>"; };
+		2CFC8DD11CACC3E000887B32 /* PHCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourse.swift; sourceTree = "<group>"; };
+		311662506865B3B17F88880A /* Pods-PezzleHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PezzleHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PezzleHub/Pods-PezzleHub.debug.xcconfig"; sourceTree = "<group>"; };
+		3A13AA4B6656C9008F16D17D /* Pods-PezzleHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PezzleHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-PezzleHub/Pods-PezzleHub.release.xcconfig"; sourceTree = "<group>"; };
+		870328361CD2F4DE00B8EC26 /* PHTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTag.swift; sourceTree = "<group>"; };
+		872501311CE8121700DAB5B6 /* PHAuthor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHAuthor.swift; sourceTree = "<group>"; };
+		872501321CE8121700DAB5B6 /* PHComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHComment.swift; sourceTree = "<group>"; };
+		87CDED491CD579B30056B2F5 /* PHVideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		94EAFF6963D81C195FB5B214 /* Pods-PerzzleStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerzzleStudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerzzleStudio/Pods-PerzzleStudio.release.xcconfig"; sourceTree = "<group>"; };
+		A732B7451C6AB023007AC824 /* PezzleHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PezzleHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A732B7481C6AB023007AC824 /* PHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAppDelegate.swift; sourceTree = "<group>"; };
+		A732B7521C6AB023007AC824 /* PerzzleHub.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PerzzleHub.xcassets; sourceTree = "<group>"; };
+		A732B7551C6AB023007AC824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A732B7571C6AB023007AC824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A732B7841C6AD5EC007AC824 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		A732B78A1C6ADFC0007AC824 /* PHConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHConstants.swift; sourceTree = "<group>"; };
+		B4103B1F1CEB241400FB16BC /* PHCourseDeliveryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCourseDeliveryInfo.swift; sourceTree = "<group>"; };
+		B42D09B61CFFEFAE00E29093 /* PHBaseLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBaseLoginViewController.swift; sourceTree = "<group>"; };
+		B4C201841D3627B600584E04 /* PHHubNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PHHubNavigationController.storyboard; sourceTree = "<group>"; };
+		B4C201861D36C4BD00584E04 /* PHTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHTransitionManager.swift; sourceTree = "<group>"; };
+		BFD7EA831DC1ECED006DC922 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D96B0F36CB554E0C6A9FCEFA /* Pods-PerzzleStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerzzleStudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerzzleStudio/Pods-PerzzleStudio.debug.xcconfig"; sourceTree = "<group>"; };
+		DE55DE562849CC5D73B215AD /* Pods_PezzleHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PezzleHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDA0EEB77010DB1D96988D8 /* Pods_PerzzleStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerzzleStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1807F01CD6FDC400D597E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B75F19C102CC0834988245 /* Pods_PerzzleStudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A732B7421C6AB023007AC824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD7EA841DC1ECED006DC922 /* UserNotifications.framework in Frameworks */,
+				2C2F7B021CAFBE6800DE5B65 /* MediaPlayer.framework in Frameworks */,
+				2C2F7AF51CAF953C00DE5B65 /* AVFoundation.framework in Frameworks */,
+				DE331AAC9934E7A76CD67600 /* Pods_PezzleHub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C0641F81CAD0F23007DB088 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4C201861D36C4BD00584E04 /* PHTransitionManager.swift */,
+				87CDED491CD579B30056B2F5 /* PHVideoPlayerViewController.swift */,
+				2C0641F91CAD0F31007DB088 /* PHWebViewController.swift */,
+				2CBF347E1CC7603400C7D576 /* PHWebViewController.storyboard */,
+				2C0642041CAD19DC007DB088 /* PHImageViewController.swift */,
+				2CBF34801CC760CF00C7D576 /* PHImageViewController.storyboard */,
+				2C3DA9FC1CC0962E0037C75D /* PHQRReaderViewController.swift */,
+				2CBF34821CC760E100C7D576 /* PHQRReaderViewController.storyboard */,
+				2C274DC21CC52F620086E5AC /* PHEPubReaderController.swift */,
+				2C274DC41CC52FAF0086E5AC /* PHEPubReaderController.storyboard */,
+				B42D09B61CFFEFAE00E29093 /* PHBaseLoginViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C0642061CAD1D19007DB088 /* PodsExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C0642071CAD1D23007DB088 /* SDWebImageExtensions.swift */,
+				2C2F7B1A1CB0B5D900DE5B65 /* Aspects+Swift.h */,
+				2C2F7B1B1CB0B5D900DE5B65 /* Aspects+Swift.m */,
+				2C2F7B1D1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.h */,
+				2C2F7B1E1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.m */,
+				2C1807DE1CD07B2800D597E6 /* ObjectMapperExtensions.swift */,
+			);
+			path = PodsExtensions;
+			sourceTree = "<group>";
+		};
+		2C1807EC1CD32EF000D597E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C1807ED1CD32EF700D597E6 /* PHInputAnimationView.swift */,
+				2CF832221D0E506E002F29AE /* PHChatUserInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C1807F41CD6FDC500D597E6 /* PerzzleStudio */ = {
+			isa = PBXGroup;
+			children = (
+				2C1807F51CD6FDC500D597E6 /* PSAppDelegate.swift */,
+				2C1808071CD6FE7A00D597E6 /* Views */,
+				2C1808061CD6FE7A00D597E6 /* ViewControllers */,
+				2C18089B1CD71CC900D597E6 /* Utilities */,
+				2C1807FC1CD6FDC500D597E6 /* PerzzleStudio.xcassets */,
+				2C1807FE1CD6FDC500D597E6 /* LaunchScreen.storyboard */,
+				2C1808011CD6FDC500D597E6 /* Info.plist */,
+				2C6D497C1CE61A48002D101E /* Settings.bundle */,
+				2C1808691CD718BF00D597E6 /* BridgingHeader.h */,
+			);
+			path = PerzzleStudio;
+			sourceTree = "<group>";
+		};
+		2C1808061CD6FE7A00D597E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C1808081CD6FE8A00D597E6 /* Initial */,
+				2CB22A7F1CE0E85800598426 /* Authentication */,
+				2C18080D1CD6FEF100D597E6 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C1808071CD6FE7A00D597E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C1808081CD6FE8A00D597E6 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				2C1808091CD6FEB300D597E6 /* PSInitialViewController.swift */,
+				2C18080B1CD6FEBC00D597E6 /* PSInitialViewController.storyboard */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		2C18080D1CD6FEF100D597E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2C4EEE251CF5A5DD00CCFBCA /* PHMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2C18089B1CD71CC900D597E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2C18089C1CD71CC900D597E6 /* Color */,
+				2C51D88E1CFAF139000D6318 /* HubClassExtensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C18089C1CD71CC900D597E6 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				2C18089D1CD71CD600D597E6 /* PSDefaultColorTheme.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		2C2F7AFE1CAFB40000DE5B65 /* VideoPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F7AFF1CAFB40D00DE5B65 /* PHVideoPlayerView.swift */,
+			);
+			path = VideoPlayerView;
+			sourceTree = "<group>";
+		};
+		2C2F7B0B1CB00CCE00DE5B65 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F7B0C1CB00CDA00DE5B65 /* PHColorTheme.swift */,
+				2C1808991CD71CA200D597E6 /* PHDefaultColorTheme.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		2C2F7B0E1CB00F5B00DE5B65 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F7B0F1CB00F6C00DE5B65 /* PHInitialViewController.swift */,
+				2CBF34841CC7610600C7D576 /* PHInitialViewController.storyboard */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		2C2F7B131CB0144500DE5B65 /* LogoView */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F7B141CB0145200DE5B65 /* PHLogoView.swift */,
+				2C2F7B161CB014A400DE5B65 /* PHLogoView.xib */,
+			);
+			path = LogoView;
+			sourceTree = "<group>";
+		};
+		2C4EEE081CF5966500CCFBCA /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				2C4EEE091CF5966500CCFBCA /* Cells */,
+				2C4EEE131CF5966500CCFBCA /* Views */,
+				2C4EEE0E1CF5966500CCFBCA /* PHCourseListAbstractController.swift */,
+				2C4EEE0D1CF5966500CCFBCA /* PHCourseChatListController.swift */,
+				2C4EEE101CF5966500CCFBCA /* PHCourseListController.swift */,
+				2C4EEE121CF5966500CCFBCA /* PHCourseViewController.swift */,
+				2C4EEE111CF5966500CCFBCA /* PHCourseViewController.storyboard */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		2C4EEE091CF5966500CCFBCA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2C4EEE0A1CF5966500CCFBCA /* PHCourseCell.swift */,
+				2C4EEE0B1CF5966500CCFBCA /* PHCourseCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2C4EEE131CF5966500CCFBCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C4EEE141CF5966500CCFBCA /* PHOwnerDetailsView.swift */,
+				2C4EEE151CF5966500CCFBCA /* PHOwnerDetailsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C51D88E1CFAF139000D6318 /* HubClassExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C51D88F1CFAF150000D6318 /* PHSettingsViewControllerExtensions.swift */,
+				2C51D8941CFAF4ED000D6318 /* PHCourseRoomViewControllerExtensions.swift */,
+				2C982D591D0AC98C0019B82E /* PHCourseChatCellConfiguration.swift */,
+				2C982D5D1D0AE22C0019B82E /* PHChatViewControllerExtensions.swift */,
+			);
+			path = HubClassExtensions;
+			sourceTree = "<group>";
+		};
+		2C51D8911CFAF297000D6318 /* HubClassExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C51D8921CFAF297000D6318 /* PHSettingsViewControllerExtensions.swift */,
+				2C51D8961CFAF504000D6318 /* PHCourseRoomViewControllerExtensions.swift */,
+				2C982D571D0AC9770019B82E /* PHCourseChatCellConfiguration.swift */,
+				2C982D5B1D0AE2220019B82E /* PHChatViewControllerExtensions.swift */,
+			);
+			path = HubClassExtensions;
+			sourceTree = "<group>";
+		};
+		2C680A581D0AAF5A0049FA95 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2C680A591D0AAF5A0049FA95 /* PHCommentCell.swift */,
+				2C680A5A1D0AAF5A0049FA95 /* PHCommentCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2C680A5B1D0AAF5A0049FA95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CB22A7F1CE0E85800598426 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2CB22A811CE0E85800598426 /* PSLoginViewController.swift */,
+				2CB22A801CE0E85800598426 /* PSLoginViewController.storyboard */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2CB770211CE0785D0096F234 /* CustomContainer */ = {
+			isa = PBXGroup;
+			children = (
+				2CB770221CE078800096F234 /* PHCustomTransitionNavigationController.swift */,
+				2CB770231CE078800096F234 /* PHPopUpController.swift */,
+				2CB7702E1CE078A30096F234 /* TabView */,
+			);
+			path = CustomContainer;
+			sourceTree = "<group>";
+		};
+		2CB7702E1CE078A30096F234 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				2CB770351CE079070096F234 /* PHTabView.swift */,
+				2C4EEDFA1CF5689C00CCFBCA /* PHTabView.xib */,
+				2CB770301CE078A30096F234 /* PHTabViewController.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		2CBF349E1CC764C100C7D576 /* CourseSetting */ = {
+			isa = PBXGroup;
+			children = (
+				2C680A581D0AAF5A0049FA95 /* Cells */,
+				2C680A5B1D0AAF5A0049FA95 /* Views */,
+				2CBF34A41CC764C100C7D576 /* PHCourseSettingsViewController.swift */,
+				2CBF34A31CC764C100C7D576 /* PHCourseSettingsViewController.storyboard */,
+				2CBF34A01CC764C100C7D576 /* PHCalendarViewController.swift */,
+				2CBF349F1CC764C100C7D576 /* PHCalendarViewController.storyboard */,
+				2CBF34A21CC764C100C7D576 /* PHCourseReviewsViewController.swift */,
+				2CBF34A11CC764C100C7D576 /* PHCourseReviewsViewController.storyboard */,
+				2C680A551D0AADC50049FA95 /* PHCommentCellConfiguration.swift */,
+			);
+			path = CourseSetting;
+			sourceTree = "<group>";
+		};
+		2CE0C9421CACCD2C00596C97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9431CACCD2C00596C97 /* ChapterView */,
+				2C2F7B131CB0144500DE5B65 /* LogoView */,
+				2CE0C9491CACCD2C00596C97 /* PieceBasicDetailsView */,
+				2C2F7AFE1CAFB40000DE5B65 /* VideoPlayerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CE0C9431CACCD2C00596C97 /* ChapterView */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9441CACCD2C00596C97 /* PHChapterView.swift */,
+				2CE0C9451CACCD2C00596C97 /* PHChapterView.xib */,
+			);
+			path = ChapterView;
+			sourceTree = "<group>";
+		};
+		2CE0C9491CACCD2C00596C97 /* PieceBasicDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C94A1CACCD2C00596C97 /* PHCourseDetailView.swift */,
+				2CE0C94B1CACCD2C00596C97 /* PHCourseDetailView.xib */,
+			);
+			path = PieceBasicDetailsView;
+			sourceTree = "<group>";
+		};
+		2CE0C9521CACCD3500596C97 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CB770211CE0785D0096F234 /* CustomContainer */,
+				2C0641F81CAD0F23007DB088 /* Common */,
+				2C2F7B0E1CB00F5B00DE5B65 /* Initial */,
+				2CE0C9531CACCD3500596C97 /* Authentication */,
+				2CE0C96C1CACCD3500596C97 /* Feed */,
+				2CE0C9601CACCD3500596C97 /* Chat */,
+				2CBF349E1CC764C100C7D576 /* CourseSetting */,
+				2C4EEE081CF5966500CCFBCA /* Course */,
+				2CE0C9841CACCD3600596C97 /* Hub */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2CE0C9531CACCD3500596C97 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9541CACCD3500596C97 /* Cells */,
+				2CE0C95B1CACCD3500596C97 /* Views */,
+				2CE0C9591CACCD3500596C97 /* PHSignupViewController.swift */,
+				2CBF34861CC7611C00C7D576 /* PHSignupViewController.storyboard */,
+				2CE0C9581CACCD3500596C97 /* PHLoginViewController.swift */,
+				2CBF34881CC7613C00C7D576 /* PHLoginViewController.storyboard */,
+				2CE0C9571CACCD3500596C97 /* PHForgotPasswordViewController.swift */,
+				2CBF348A1CC7614600C7D576 /* PHForgotPasswordViewController.storyboard */,
+				2CE0C95A1CACCD3500596C97 /* PHTermsAndConditionsViewController.swift */,
+				2CBF348C1CC7614D00C7D576 /* PHTermsAndConditionsViewController.storyboard */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2CE0C9541CACCD3500596C97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9551CACCD3500596C97 /* PHTermsAndConditionsCell.swift */,
+				2CE0C9561CACCD3500596C97 /* PHTermsAndConditionsCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CE0C95B1CACCD3500596C97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C95C1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.swift */,
+				2CE0C95D1CACCD3500596C97 /* PHTermsAndConditionsHeaderChapterView.xib */,
+				2CE0C95E1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.swift */,
+				2CE0C95F1CACCD3500596C97 /* PHTermsAndConditionsHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CE0C9601CACCD3500596C97 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9611CACCD3500596C97 /* Cells */,
+				2C1807EC1CD32EF000D597E6 /* Views */,
+				2CE0C96A1CACCD3500596C97 /* PHChatViewController.swift */,
+				2CBF349C1CC7645100C7D576 /* PHChatViewController.storyboard */,
+				2C2F7B091CB0032500DE5B65 /* PHPieceCellConfiguration.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2CE0C9611CACCD3500596C97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9DF1CACDCFA00596C97 /* PHPieceCell.swift */,
+				2C1807E81CD32E4F00D597E6 /* PHUserPieceCell.swift */,
+				2C1807EA1CD32E5700D597E6 /* PHOwnerPieceCell.swift */,
+				2CE0C9661CACCD3500596C97 /* PHTextPieceCell.swift */,
+				2CE0C9671CACCD3500596C97 /* PHTextPieceCell.xib */,
+				2CE0C9681CACCD3500596C97 /* PHUserReactionPieceCell.swift */,
+				2CE0C9691CACCD3500596C97 /* PHUserReactionPieceCell.xib */,
+				2CE0C9E61CACECEA00596C97 /* PHPicturePieceCell.swift */,
+				2CE0C9E81CACECF400596C97 /* PHPicturePieceCell.xib */,
+				2C0641FF1CAD1208007DB088 /* PHURLPieceCell.swift */,
+				2C0642011CAD1210007DB088 /* PHURLPieceCell.xib */,
+				2C2F7AF61CAF955F00DE5B65 /* PHAudioPieceCell.swift */,
+				2C2F7AF81CAF957000DE5B65 /* PHAudioPieceCell.xib */,
+				2C2F7AFA1CAFB27700DE5B65 /* PHVideoPieceCell.swift */,
+				2C2F7AFC1CAFB28100DE5B65 /* PHVideoPieceCell.xib */,
+				2C274DBE1CC52CBA0086E5AC /* PHEPubPieceCell.swift */,
+				2C274DC01CC52CCC0086E5AC /* PHEPubPieceCell.xib */,
+				2C4EEE321CF5BBF300CCFBCA /* PHPDFPieceCell.swift */,
+				2C4EEE351CF5BBFA00CCFBCA /* PHPDFPieceCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CE0C96C1CACCD3500596C97 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C96D1CACCD3500596C97 /* Cells */,
+				2CE0C9791CACCD3500596C97 /* Views */,
+				2CE0C9761CACCD3500596C97 /* PHFeedViewController.swift */,
+				2CBF348E1CC7639000C7D576 /* PHFeedViewController.storyboard */,
+				2C1807E51CD31DB200D597E6 /* PHCourseRoomViewController.swift */,
+				2C1807E41CD31DB200D597E6 /* PHCourseRoomViewController.storyboard */,
+				2CE0C9771CACCD3500596C97 /* PHSettingsViewController.swift */,
+				2CBF34981CC763E900C7D576 /* PHSettingsViewController.storyboard */,
+				2C57C1A61CE56862005784F1 /* PHAppSettingsViewController.swift */,
+				2C57C1A81CE5686B005784F1 /* PHAppSettingsViewController.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2CE0C96D1CACCD3500596C97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C96E1CACCD3500596C97 /* PHCourseRoomChapterCell.swift */,
+				2CE0C96F1CACCD3500596C97 /* PHCourseRoomChapterCell.xib */,
+				2CE0C9701CACCD3500596C97 /* PHFeedCell.swift */,
+				2CE0C9711CACCD3500596C97 /* PHFeedCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CE0C9791CACCD3500596C97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C97A1CACCD3500596C97 /* PHChatFooter.swift */,
+				2CE0C97B1CACCD3500596C97 /* PHChatFooter.xib */,
+				2CE0C97C1CACCD3500596C97 /* PHChatHeader.swift */,
+				2CE0C97D1CACCD3500596C97 /* PHChatHeader.xib */,
+				2CE0C9801CACCD3500596C97 /* PHCourseRoomIconView.swift */,
+				2CE0C9811CACCD3600596C97 /* PHCourseRoomIconView.xib */,
+				2CE0C9821CACCD3600596C97 /* PHGraphView.swift */,
+				2CE0C9831CACCD3600596C97 /* PHGraphView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CE0C9841CACCD3600596C97 /* Hub */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9851CACCD3600596C97 /* Cells */,
+				2CE0C9911CACCD3600596C97 /* Views */,
+				2CE0C98E1CACCD3600596C97 /* PHHubViewController.swift */,
+				2C32488C1D23ECE400EEF8AF /* PHHubNavigationController.swift */,
+				2CE0C9901CACCD3600596C97 /* PHOwnerViewController.swift */,
+				2CBF34B31CC7660A00C7D576 /* PHOwnerViewController.storyboard */,
+				2C4EEE001CF574A900CCFBCA /* PHCategoryListViewController.swift */,
+				2C4EEE021CF574AE00CCFBCA /* PHCategoryListViewController.storyboard */,
+				2C4EEE211CF5977100CCFBCA /* PHOwnerListViewController.swift */,
+				2C4EEE231CF5977900CCFBCA /* PHOwnerListViewController.storyboard */,
+				2C98660A1D0019C600D216C7 /* PHSearchViewController.swift */,
+				2C98660C1D0019D600D216C7 /* PHSearchViewController.storyboard */,
+				2C6F07951CC9249300235369 /* PHCourseDetailViewConfiguration.swift */,
+				B4C201841D3627B600584E04 /* PHHubNavigationController.storyboard */,
+			);
+			path = Hub;
+			sourceTree = "<group>";
+		};
+		2CE0C9851CACCD3600596C97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9881CACCD3600596C97 /* PHCategoryCell.swift */,
+				2CE0C9891CACCD3600596C97 /* PHCategoryCell.xib */,
+				2CE0C98A1CACCD3600596C97 /* PHOwnerCell.swift */,
+				2CE0C98B1CACCD3600596C97 /* PHOwnerCell.xib */,
+				2CE0C98C1CACCD3600596C97 /* PHOwnerCourseCell.swift */,
+				2CE0C98D1CACCD3600596C97 /* PHOwnerCourseCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CE0C9911CACCD3600596C97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CE0C9941CACCD3600596C97 /* PHSearchBarContainerView.swift */,
+				2CE0C9951CACCD3600596C97 /* PHSearchBarContainerView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CE0C9E11CACDDA300596C97 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B4A547451CF9405800CC1AE2 /* Date */,
+				2CE0C9E41CACDE0200596C97 /* FoundationExtensions.swift */,
+				2CE0C9E21CACDDAE00596C97 /* UIKitExtensions.swift */,
+				2C0642091CAD2518007DB088 /* UIViewExtensions.swift */,
+				2C0641FD1CAD1059007DB088 /* UIViewControllerExtensions.swift */,
+				2CB770101CE03A5E0096F234 /* PHInitialViewControllerAccessor.swift */,
+				2CB22A781CE0D01500598426 /* PHApplicationConfiguration.swift */,
+				2CF7FAF61D20FDA50015DE53 /* PHPaginator.swift */,
+				2C2F7B0B1CB00CCE00DE5B65 /* Color */,
+				2C51D8911CFAF297000D6318 /* HubClassExtensions */,
+				2C0642061CAD1D19007DB088 /* PodsExtensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2CF7FAF91D211D640015DE53 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CF7FAFD1D211D7F0015DE53 /* PHLoadingTableViewCell.swift */,
+				2CF7FB031D211DB20015DE53 /* PHLoadingTableViewCell.xib */,
+				2CF7FAFF1D211D910015DE53 /* PHLoadingCollectionViewCell.swift */,
+				2CF7FB051D211DBA0015DE53 /* PHLoadingCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CFC8DCD1CACC22600887B32 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2CFC8DCF1CACC25200887B32 /* PHAPIManager.swift */,
+				2C3F26E81CD9D8F800BEE957 /* PHRouter.swift */,
+				2C3F26EB1CDA0F7C00BEE957 /* PHAuthManager.swift */,
+				2CFC8DCE1CACC23700887B32 /* Models */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		2CFC8DCE1CACC23700887B32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C1807DC1CD0742800D597E6 /* PHData.swift */,
+				872501311CE8121700DAB5B6 /* PHAuthor.swift */,
+				872501321CE8121700DAB5B6 /* PHComment.swift */,
+				2CFC8DD11CACC3E000887B32 /* PHCourse.swift */,
+				870328361CD2F4DE00B8EC26 /* PHTag.swift */,
+				2CE0C9D11CACCF0200596C97 /* PHChapter.swift */,
+				2CE0C9D31CACCF0C00596C97 /* PHPiece.swift */,
+				2C2F7B051CAFF8A700DE5B65 /* PHUserPiece.swift */,
+				2C2F7B071CAFF8AE00DE5B65 /* PHOwnerPiece.swift */,
+				2C18D5CD1CCC674A00E1D5B8 /* PHUser.swift */,
+				2C6F07891CC9160500235369 /* PHOwner.swift */,
+				2C6F078D1CC91C6600235369 /* PHCourseCategory.swift */,
+				B4103B1F1CEB241400FB16BC /* PHCourseDeliveryInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CFC8DD31CACC74000887B32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A732B73C1C6AB023007AC824 = {
+			isa = PBXGroup;
+			children = (
+				A732B7471C6AB023007AC824 /* PezzleHub */,
+				2C1807F41CD6FDC500D597E6 /* PerzzleStudio */,
+				A732B7461C6AB023007AC824 /* Products */,
+				AE43A32E5D087F7AAADC1FD1 /* Frameworks */,
+				F6B51D7AA61A50F32E02828D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A732B7461C6AB023007AC824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A732B7451C6AB023007AC824 /* PezzleHub.app */,
+				2C1807F31CD6FDC400D597E6 /* PerzzleStudio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A732B7471C6AB023007AC824 /* PezzleHub */ = {
+			isa = PBXGroup;
+			children = (
+				A732B7481C6AB023007AC824 /* PHAppDelegate.swift */,
+				A732B78A1C6ADFC0007AC824 /* PHConstants.swift */,
+				2CF7FAF91D211D640015DE53 /* Cells */,
+				2CE0C9421CACCD2C00596C97 /* Views */,
+				2CE0C9521CACCD3500596C97 /* ViewControllers */,
+				2CFC8DCD1CACC22600887B32 /* DataModels */,
+				2CE0C9E11CACDDA300596C97 /* Utilities */,
+				2CFC8DD31CACC74000887B32 /* Resources */,
+				A732B7521C6AB023007AC824 /* PerzzleHub.xcassets */,
+				2C18082F1CD7005D00D597E6 /* Shared.xcassets */,
+				A732B7541C6AB023007AC824 /* LaunchScreen.storyboard */,
+				A732B7571C6AB023007AC824 /* Info.plist */,
+				A732B7841C6AD5EC007AC824 /* BridgingHeader.h */,
+				2C57C1AA1CE56C6E005784F1 /* Settings.bundle */,
+				2CF0F9BB1CB777D4006AF8BE /* .swiftlint.yml */,
+				2C1807DA1CD05E7E00D597E6 /* readme.md */,
+			);
+			path = PezzleHub;
+			sourceTree = "<group>";
+		};
+		AE43A32E5D087F7AAADC1FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD7EA831DC1ECED006DC922 /* UserNotifications.framework */,
+				2C2F7B011CAFBE6800DE5B65 /* MediaPlayer.framework */,
+				2C2F7AF41CAF953C00DE5B65 /* AVFoundation.framework */,
+				EDDA0EEB77010DB1D96988D8 /* Pods_PerzzleStudio.framework */,
+				DE55DE562849CC5D73B215AD /* Pods_PezzleHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4A547451CF9405800CC1AE2 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		F6B51D7AA61A50F32E02828D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96B0F36CB554E0C6A9FCEFA /* Pods-PerzzleStudio.debug.xcconfig */,
+				94EAFF6963D81C195FB5B214 /* Pods-PerzzleStudio.release.xcconfig */,
+				311662506865B3B17F88880A /* Pods-PezzleHub.debug.xcconfig */,
+				3A13AA4B6656C9008F16D17D /* Pods-PezzleHub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C1807F21CD6FDC400D597E6 /* PerzzleStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1808041CD6FDC500D597E6 /* Build configuration list for PBXNativeTarget "PerzzleStudio" */;
+			buildPhases = (
+				FD1A18F37F82BA189D7B1AB0 /* [CP] Check Pods Manifest.lock */,
+				2C1807EF1CD6FDC400D597E6 /* Sources */,
+				2C1807F01CD6FDC400D597E6 /* Frameworks */,
+				2C1807F11CD6FDC400D597E6 /* Resources */,
+				2C1808A01CD71F5F00D597E6 /* Run Script Swiftlint */,
+				2C18089F1CD71F3D00D597E6 /* Run Script Fabric */,
+				07DA8B9C7621FEB023B9DE43 /* [CP] Embed Pods Frameworks */,
+				5BE002E22CD7F884FE7BF461 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerzzleStudio;
+			productName = PerzzleStudio;
+			productReference = 2C1807F31CD6FDC400D597E6 /* PerzzleStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A732B7441C6AB023007AC824 /* PezzleHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A732B75A1C6AB023007AC824 /* Build configuration list for PBXNativeTarget "PezzleHub" */;
+			buildPhases = (
+				86C84D9D1FC3AC371EE6959D /* [CP] Check Pods Manifest.lock */,
+				A732B7411C6AB023007AC824 /* Sources */,
+				A732B7421C6AB023007AC824 /* Frameworks */,
+				A732B7431C6AB023007AC824 /* Resources */,
+				2C49C4C61CB49EAB00991B32 /* Run Script Swiftlint */,
+				2C0642031CAD18AE007DB088 /* Run Script Fabric */,
+				820447083510E0E7B1EF1C0A /* [CP] Embed Pods Frameworks */,
+				B62526606091A6F20C70F1D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PezzleHub;
+			productName = PezzleHub;
+			productReference = A732B7451C6AB023007AC824 /* PezzleHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A732B73D1C6AB023007AC824 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PH;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = PersonalStock;
+				TargetAttributes = {
+					2C1807F21CD6FDC400D597E6 = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+					};
+					A732B7441C6AB023007AC824 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A732B7401C6AB023007AC824 /* Build configuration list for PBXProject "PezzleHub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A732B73C1C6AB023007AC824;
+			productRefGroup = A732B7461C6AB023007AC824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A732B7441C6AB023007AC824 /* PezzleHub */,
+				2C1807F21CD6FDC400D597E6 /* PerzzleStudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C1807F11CD6FDC400D597E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1808751CD7191E00D597E6 /* PHCourseDetailView.xib in Resources */,
+				2C680A5F1D0AAF640049FA95 /* PHCommentCell.xib in Resources */,
+				2C18086F1CD7191500D597E6 /* PHImageViewController.storyboard in Resources */,
+				2C3248891D23AD0800EEF8AF /* PHLoadingTableViewCell.xib in Resources */,
+				2C1808641CD706ED00D597E6 /* PHCalendarViewController.storyboard in Resources */,
+				2C1808501CD706DD00D597E6 /* PHTextPieceCell.xib in Resources */,
+				2C1808731CD7191500D597E6 /* PHEPubReaderController.storyboard in Resources */,
+				2C1808201CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderView.xib in Resources */,
+				2C1808541CD706DD00D597E6 /* PHPicturePieceCell.xib in Resources */,
+				2C1808561CD706DD00D597E6 /* PHURLPieceCell.xib in Resources */,
+				2C1808781CD7193300D597E6 /* PHChatFooter.xib in Resources */,
+				2C1808431CD706C600D597E6 /* PHCourseRoomViewController.storyboard in Resources */,
+				2C1808451CD706D200D597E6 /* PHCourseRoomChapterCell.xib in Resources */,
+				2C18085C1CD706DD00D597E6 /* PHEPubPieceCell.xib in Resources */,
+				2C1808581CD706DD00D597E6 /* PHAudioPieceCell.xib in Resources */,
+				2CB22A821CE0E85800598426 /* PSLoginViewController.storyboard in Resources */,
+				2C1808971CD71BA100D597E6 /* PHFeedCell.xib in Resources */,
+				2C4EEE2F1CF5A7AA00CCFBCA /* PHCourseViewController.storyboard in Resources */,
+				2C1808001CD6FDC500D597E6 /* LaunchScreen.storyboard in Resources */,
+				2C1808261CD6FFCA00D597E6 /* PHForgotPasswordViewController.storyboard in Resources */,
+				2C1808621CD706ED00D597E6 /* PHCourseSettingsViewController.storyboard in Resources */,
+				2C1808281CD6FFCA00D597E6 /* PHTermsAndConditionsViewController.storyboard in Resources */,
+				2C18081C1CD6FFC500D597E6 /* PHTermsAndConditionsCell.xib in Resources */,
+				2C18087A1CD7193300D597E6 /* PHChatHeader.xib in Resources */,
+				2C4EEE281CF5A76000CCFBCA /* PHCourseCell.xib in Resources */,
+				2CB7700F1CE033940096F234 /* PHSettingsViewController.storyboard in Resources */,
+				2C18085A1CD706DD00D597E6 /* PHVideoPieceCell.xib in Resources */,
+				2C1808311CD700DB00D597E6 /* Shared.xcassets in Resources */,
+				2C18086D1CD7191500D597E6 /* PHWebViewController.storyboard in Resources */,
+				2C6D497B1CE6144A002D101E /* PHAppSettingsViewController.storyboard in Resources */,
+				2C1808521CD706DD00D597E6 /* PHUserReactionPieceCell.xib in Resources */,
+				2C1807FD1CD6FDC500D597E6 /* PerzzleStudio.xcassets in Resources */,
+				2C18087E1CD7193300D597E6 /* PHGraphView.xib in Resources */,
+				2C1808661CD706ED00D597E6 /* PHCourseReviewsViewController.storyboard in Resources */,
+				2C1808711CD7191500D597E6 /* PHQRReaderViewController.storyboard in Resources */,
+				2C4EEE371CF5BBFA00CCFBCA /* PHPDFPieceCell.xib in Resources */,
+				2C18082A1CD6FFE000D597E6 /* PHLogoView.xib in Resources */,
+				2C4EEDFC1CF56EF300CCFBCA /* PHTabView.xib in Resources */,
+				2C18080C1CD6FEBC00D597E6 /* PSInitialViewController.storyboard in Resources */,
+				2C18082C1CD6FFF000D597E6 /* PHChapterView.xib in Resources */,
+				2C18087C1CD7193300D597E6 /* PHCourseRoomIconView.xib in Resources */,
+				2C6D497D1CE61A48002D101E /* Settings.bundle in Resources */,
+				2C1808241CD6FFCA00D597E6 /* PHLoginViewController.storyboard in Resources */,
+				2C18085F1CD706E800D597E6 /* PHChatViewController.storyboard in Resources */,
+				2C32488B1D23AD0800EEF8AF /* PHLoadingCollectionViewCell.xib in Resources */,
+				2C18081E1CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderChapterView.xib in Resources */,
+				2C1808221CD6FFCA00D597E6 /* PHSignupViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A732B7431C6AB023007AC824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE0C9C11CACCD3600596C97 /* PHCategoryCell.xib in Resources */,
+				2C1807E61CD31DB200D597E6 /* PHCourseRoomViewController.storyboard in Resources */,
+				2CE0C9AA1CACCD3600596C97 /* PHCourseRoomChapterCell.xib in Resources */,
+				B4C201851D3627B600584E04 /* PHHubNavigationController.storyboard in Resources */,
+				2C98660D1D0019D600D216C7 /* PHSearchViewController.storyboard in Resources */,
+				2C274DC51CC52FAF0086E5AC /* PHEPubReaderController.storyboard in Resources */,
+				2CE0C99F1CACCD3600596C97 /* PHTermsAndConditionsHeaderView.xib in Resources */,
+				2CE0C9A51CACCD3600596C97 /* PHTextPieceCell.xib in Resources */,
+				2C0642021CAD1210007DB088 /* PHURLPieceCell.xib in Resources */,
+				2C2F7AF91CAF957000DE5B65 /* PHAudioPieceCell.xib in Resources */,
+				2C4EEE241CF5977900CCFBCA /* PHOwnerListViewController.storyboard in Resources */,
+				2CBF34A91CC764C100C7D576 /* PHCourseReviewsViewController.storyboard in Resources */,
+				2CBF34811CC760CF00C7D576 /* PHImageViewController.storyboard in Resources */,
+				2C4EEDFB1CF5689C00CCFBCA /* PHTabView.xib in Resources */,
+				2CE0C94D1CACCD2C00596C97 /* PHChapterView.xib in Resources */,
+				2CBF348F1CC7639000C7D576 /* PHFeedViewController.storyboard in Resources */,
+				2CE0C9AC1CACCD3600596C97 /* PHFeedCell.xib in Resources */,
+				2CBF348D1CC7614D00C7D576 /* PHTermsAndConditionsViewController.storyboard in Resources */,
+				2CE0C9C31CACCD3600596C97 /* PHOwnerCell.xib in Resources */,
+				2C4EEE171CF5966500CCFBCA /* PHCourseCell.xib in Resources */,
+				2CBF34A71CC764C100C7D576 /* PHCalendarViewController.storyboard in Resources */,
+				2CBF34B41CC7660A00C7D576 /* PHOwnerViewController.storyboard in Resources */,
+				2CE0C9B71CACCD3600596C97 /* PHChatHeader.xib in Resources */,
+				2CBF34891CC7613C00C7D576 /* PHLoginViewController.storyboard in Resources */,
+				2CBF34851CC7610600C7D576 /* PHInitialViewController.storyboard in Resources */,
+				2C1808301CD7005D00D597E6 /* Shared.xcassets in Resources */,
+				2CBF34AB1CC764C100C7D576 /* PHCourseSettingsViewController.storyboard in Resources */,
+				2CBF34991CC763E900C7D576 /* PHSettingsViewController.storyboard in Resources */,
+				2CE0C9B51CACCD3600596C97 /* PHChatFooter.xib in Resources */,
+				2C680A5D1D0AAF5A0049FA95 /* PHCommentCell.xib in Resources */,
+				A732B7561C6AB023007AC824 /* LaunchScreen.storyboard in Resources */,
+				2C4EEE031CF574AE00CCFBCA /* PHCategoryListViewController.storyboard in Resources */,
+				2C2F7AFD1CAFB28100DE5B65 /* PHVideoPieceCell.xib in Resources */,
+				2CBF348B1CC7614600C7D576 /* PHForgotPasswordViewController.storyboard in Resources */,
+				2CE0C99D1CACCD3600596C97 /* PHTermsAndConditionsHeaderChapterView.xib in Resources */,
+				2CE0C9511CACCD2C00596C97 /* PHCourseDetailView.xib in Resources */,
+				2C4EEE1D1CF5966500CCFBCA /* PHCourseViewController.storyboard in Resources */,
+				2C4EEE201CF5966500CCFBCA /* PHOwnerDetailsView.xib in Resources */,
+				2CBF349D1CC7645100C7D576 /* PHChatViewController.storyboard in Resources */,
+				2CBF34871CC7611C00C7D576 /* PHSignupViewController.storyboard in Resources */,
+				2CBF347F1CC7603400C7D576 /* PHWebViewController.storyboard in Resources */,
+				2CE0C9CC1CACCD3600596C97 /* PHSearchBarContainerView.xib in Resources */,
+				2CE0C9C51CACCD3600596C97 /* PHOwnerCourseCell.xib in Resources */,
+				2C274DC11CC52CCC0086E5AC /* PHEPubPieceCell.xib in Resources */,
+				2C57C1A91CE5686B005784F1 /* PHAppSettingsViewController.storyboard in Resources */,
+				2CF7FB041D211DB20015DE53 /* PHLoadingTableViewCell.xib in Resources */,
+				2CE0C9971CACCD3600596C97 /* PHTermsAndConditionsCell.xib in Resources */,
+				2CE0C9BB1CACCD3600596C97 /* PHCourseRoomIconView.xib in Resources */,
+				2CE0C9BD1CACCD3600596C97 /* PHGraphView.xib in Resources */,
+				2C2F7B171CB014A400DE5B65 /* PHLogoView.xib in Resources */,
+				2CE0C9E91CACECF400596C97 /* PHPicturePieceCell.xib in Resources */,
+				2C4EEE361CF5BBFA00CCFBCA /* PHPDFPieceCell.xib in Resources */,
+				2C57C1AB1CE56C6E005784F1 /* Settings.bundle in Resources */,
+				2CBF34831CC760E100C7D576 /* PHQRReaderViewController.storyboard in Resources */,
+				2CF7FB061D211DBA0015DE53 /* PHLoadingCollectionViewCell.xib in Resources */,
+				A732B7531C6AB023007AC824 /* PerzzleHub.xcassets in Resources */,
+				2CE0C9A71CACCD3600596C97 /* PHUserReactionPieceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07DA8B9C7621FEB023B9DE43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PerzzleStudio/Pods-PerzzleStudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C0642031CAD18AE007DB088 /* Run Script Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Fabric";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# the Fabric run script build phase (this one) should be the last build phase\n\"${PODS_ROOT}/Fabric/run\" bb12dd4274c657f420697c5692a28a814b3c9392 d3395abdfc779e975265437675d701fb931be65562514f4ebb01974abed0e624";
+		};
+		2C18089F1CD71F3D00D597E6 /* Run Script Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Fabric";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" dddebd85a09ace0906a3c4dba1a3a117e1b22515 5f9f20173b8458c7b107ed0915c8d07efbb3e79ea56d7649e8c5c9e4e133b08b";
+		};
+		2C1808A01CD71F5F00D597E6 /* Run Script Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Swiftlint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# about Swiftlint http://qiita.com/syamaoka/items/2edfe315940d91846bf0#_reference-22891c8650ce42ce0b2e\nif which swiftlint >/dev/null; then\n  swiftlint\n\nelif [ ${CONFIGURATION} == \"Release\" ]; then\n  echo \"Swiftlint is disabled on Release Configuration\"\n\nelse\n  echo \"error: Swiftlint does not exist, download from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+		2C49C4C61CB49EAB00991B32 /* Run Script Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Swiftlint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# about Swiftlint http://qiita.com/syamaoka/items/2edfe315940d91846bf0#_reference-22891c8650ce42ce0b2e\nif which swiftlint >/dev/null; then\nswiftlint\n\nelif [ ${CONFIGURATION} == \"Release\" ]; then\necho \"Swiftlint is disabled on Release Configuration\"\n\nelse\necho \"error: Swiftlint does not exist, download from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+		};
+		5BE002E22CD7F884FE7BF461 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PerzzleStudio/Pods-PerzzleStudio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820447083510E0E7B1EF1C0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PezzleHub/Pods-PezzleHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C84D9D1FC3AC371EE6959D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B62526606091A6F20C70F1D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PezzleHub/Pods-PezzleHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD1A18F37F82BA189D7B1AB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C1807EF1CD6FDC400D597E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42D09B81CFFF83B00E29093 /* PHBaseLoginViewController.swift in Sources */,
+				2C1808161CD6FF7300D597E6 /* UIViewControllerExtensions.swift in Sources */,
+				2C1808631CD706ED00D597E6 /* PHCalendarViewController.swift in Sources */,
+				2C1808251CD6FFCA00D597E6 /* PHForgotPasswordViewController.swift in Sources */,
+				2C18082D1CD6FFF300D597E6 /* PHConstants.swift in Sources */,
+				2C1808531CD706DD00D597E6 /* PHPicturePieceCell.swift in Sources */,
+				66D6EECC1DE7F53100147533 /* SDWebImageExtensions.swift in Sources */,
+				2C51D8901CFAF150000D6318 /* PHSettingsViewControllerExtensions.swift in Sources */,
+				2C1808591CD706DD00D597E6 /* PHVideoPieceCell.swift in Sources */,
+				2CF7FAF81D20FDA80015DE53 /* PHPaginator.swift in Sources */,
+				2C4EEE2E1CF5A7AA00CCFBCA /* PHCourseViewController.swift in Sources */,
+				2C1808421CD706C600D597E6 /* PHCourseRoomViewController.swift in Sources */,
+				2C680A571D0AADDD0049FA95 /* PHCommentCellConfiguration.swift in Sources */,
+				2C18085E1CD706E800D597E6 /* PHChatViewController.swift in Sources */,
+				2C4EEE2A1CF5A7AA00CCFBCA /* PHCourseChatListController.swift in Sources */,
+				2C1808441CD706D200D597E6 /* PHCourseRoomChapterCell.swift in Sources */,
+				2C18083B1CD705BF00D597E6 /* PHChapter.swift in Sources */,
+				2C982D5E1D0AE22C0019B82E /* PHChatViewControllerExtensions.swift in Sources */,
+				2C18083F1CD705BF00D597E6 /* PHUser.swift in Sources */,
+				2C1808481CD706DD00D597E6 /* PHPieceCell.swift in Sources */,
+				2C1808381CD705BF00D597E6 /* PHData.swift in Sources */,
+				2C1808791CD7193300D597E6 /* PHChatHeader.swift in Sources */,
+				2C18084A1CD706DD00D597E6 /* PHOwnerPieceCell.swift in Sources */,
+				2C18080A1CD6FEB300D597E6 /* PSInitialViewController.swift in Sources */,
+				2C982D5A1D0AC98C0019B82E /* PHCourseChatCellConfiguration.swift in Sources */,
+				2C18087D1CD7193300D597E6 /* PHGraphView.swift in Sources */,
+				2C18081D1CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderChapterView.swift in Sources */,
+				2C1808491CD706DD00D597E6 /* PHUserPieceCell.swift in Sources */,
+				2C1808571CD706DD00D597E6 /* PHAudioPieceCell.swift in Sources */,
+				2C4EEE271CF5A76000CCFBCA /* PHCourseCell.swift in Sources */,
+				2C4EEE2C1CF5A7AA00CCFBCA /* PHCourseListController.swift in Sources */,
+				2CF832241D0E5071002F29AE /* PHChatUserInputView.swift in Sources */,
+				2CB7702B1CE078840096F234 /* PHPopUpController.swift in Sources */,
+				2C3F26EA1CD9D92900BEE957 /* PHRouter.swift in Sources */,
+				2C4EEE341CF5BBF300CCFBCA /* PHPDFPieceCell.swift in Sources */,
+				2C1808771CD7193300D597E6 /* PHChatFooter.swift in Sources */,
+				2C1808551CD706DD00D597E6 /* PHURLPieceCell.swift in Sources */,
+				2C3F26E51CD90BDD00BEE957 /* PHCourseDetailViewConfiguration.swift in Sources */,
+				2C1808371CD705BF00D597E6 /* PHAPIManager.swift in Sources */,
+				2C18083A1CD705BF00D597E6 /* PHTag.swift in Sources */,
+				2C51D8981CFB27B6000D6318 /* PHCourseDeliveryInfo.swift in Sources */,
+				2C18083C1CD705BF00D597E6 /* PHPiece.swift in Sources */,
+				2C1808211CD6FFCA00D597E6 /* PHSignupViewController.swift in Sources */,
+				2C1808391CD705BF00D597E6 /* PHCourse.swift in Sources */,
+				2C4EEE291CF5A7AA00CCFBCA /* PHCourseListAbstractController.swift in Sources */,
+				2C1808411CD705BF00D597E6 /* PHCourseCategory.swift in Sources */,
+				2C1808601CD706E800D597E6 /* PHPieceCellConfiguration.swift in Sources */,
+				2C18083D1CD705BF00D597E6 /* PHUserPiece.swift in Sources */,
+				2C1808401CD705BF00D597E6 /* PHOwner.swift in Sources */,
+				2CB7702A1CE078840096F234 /* PHCustomTransitionNavigationController.swift in Sources */,
+				2CB22A7A1CE0D02D00598426 /* PHApplicationConfiguration.swift in Sources */,
+				2C1808151CD6FF7300D597E6 /* UIViewExtensions.swift in Sources */,
+				2C18084F1CD706DD00D597E6 /* PHTextPieceCell.swift in Sources */,
+				2CB770371CE0821B0096F234 /* PHTabView.swift in Sources */,
+				2C1808291CD6FFE000D597E6 /* PHLogoView.swift in Sources */,
+				2C1808761CD7192200D597E6 /* PHVideoPlayerView.swift in Sources */,
+				2C18086C1CD7191500D597E6 /* PHWebViewController.swift in Sources */,
+				2C1808701CD7191500D597E6 /* PHQRReaderViewController.swift in Sources */,
+				2C51D8951CFAF4ED000D6318 /* PHCourseRoomViewControllerExtensions.swift in Sources */,
+				2C1808131CD6FF7300D597E6 /* FoundationExtensions.swift in Sources */,
+				2CB770331CE078AA0096F234 /* PHTabViewController.swift in Sources */,
+				2C1808191CD6FF7300D597E6 /* GVUserDefaults+PHAdditions.m in Sources */,
+				2C1808961CD71BA100D597E6 /* PHFeedCell.swift in Sources */,
+				2C18085D1CD706E100D597E6 /* PHInputAnimationView.swift in Sources */,
+				2C1808741CD7191E00D597E6 /* PHCourseDetailView.swift in Sources */,
+				2C1808271CD6FFCA00D597E6 /* PHTermsAndConditionsViewController.swift in Sources */,
+				2C1808721CD7191500D597E6 /* PHEPubReaderController.swift in Sources */,
+				2CB7700E1CE0338C0096F234 /* PHSettingsViewController.swift in Sources */,
+				2CB770121CE03A670096F234 /* PHInitialViewControllerAccessor.swift in Sources */,
+				2C1808181CD6FF7300D597E6 /* Aspects+Swift.m in Sources */,
+				2C18089E1CD71CD600D597E6 /* PSDefaultColorTheme.swift in Sources */,
+				2C3F26ED1CDA102300BEE957 /* PHAuthManager.swift in Sources */,
+				2C1808611CD706ED00D597E6 /* PHCourseSettingsViewController.swift in Sources */,
+				2C18083E1CD705BF00D597E6 /* PHOwnerPiece.swift in Sources */,
+				2C4EEE261CF5A5DD00CCFBCA /* PHMainViewController.swift in Sources */,
+				2C3248881D23AD0800EEF8AF /* PHLoadingTableViewCell.swift in Sources */,
+				2C1808141CD6FF7300D597E6 /* UIKitExtensions.swift in Sources */,
+				2C18081B1CD6FFC500D597E6 /* PHTermsAndConditionsCell.swift in Sources */,
+				2C18085B1CD706DD00D597E6 /* PHEPubPieceCell.swift in Sources */,
+				2C18082B1CD6FFF000D597E6 /* PHChapterView.swift in Sources */,
+				2C18086E1CD7191500D597E6 /* PHImageViewController.swift in Sources */,
+				2C32488A1D23AD0800EEF8AF /* PHLoadingCollectionViewCell.swift in Sources */,
+				2CB22A831CE0E85800598426 /* PSLoginViewController.swift in Sources */,
+				2C1807F61CD6FDC500D597E6 /* PSAppDelegate.swift in Sources */,
+				2C1808121CD6FF4C00D597E6 /* PHColorTheme.swift in Sources */,
+				2C6D497A1CE6143F002D101E /* PHAppSettingsViewController.swift in Sources */,
+				2C3F26E71CD90C0800BEE957 /* PHVideoPlayerViewController.swift in Sources */,
+				2C1808651CD706ED00D597E6 /* PHCourseReviewsViewController.swift in Sources */,
+				2C18087B1CD7193300D597E6 /* PHCourseRoomIconView.swift in Sources */,
+				2CB22A6D1CE0B30900598426 /* PHDefaultColorTheme.swift in Sources */,
+				2C6D49C21CE9A5C8002D101E /* PHComment.swift in Sources */,
+				2C680A5E1D0AAF640049FA95 /* PHCommentCell.swift in Sources */,
+				2C18081F1CD6FFCA00D597E6 /* PHTermsAndConditionsHeaderView.swift in Sources */,
+				2C6D49C11CE9A5C8002D101E /* PHAuthor.swift in Sources */,
+				2C18081A1CD6FF7300D597E6 /* ObjectMapperExtensions.swift in Sources */,
+				2C1808511CD706DD00D597E6 /* PHUserReactionPieceCell.swift in Sources */,
+				2C1808231CD6FFCA00D597E6 /* PHLoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A732B7411C6AB023007AC824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE0C9CB1CACCD3600596C97 /* PHSearchBarContainerView.swift in Sources */,
+				2C0641FE1CAD1059007DB088 /* UIViewControllerExtensions.swift in Sources */,
+				2CE0C99A1CACCD3600596C97 /* PHSignupViewController.swift in Sources */,
+				2C680A5C1D0AAF5A0049FA95 /* PHCommentCell.swift in Sources */,
+				2C4EEE331CF5BBF300CCFBCA /* PHPDFPieceCell.swift in Sources */,
+				2CE0C99B1CACCD3600596C97 /* PHTermsAndConditionsViewController.swift in Sources */,
+				2C4EEE161CF5966500CCFBCA /* PHCourseCell.swift in Sources */,
+				2CE0C9E71CACECEA00596C97 /* PHPicturePieceCell.swift in Sources */,
+				2CE0C9981CACCD3600596C97 /* PHForgotPasswordViewController.swift in Sources */,
+				2C274DC31CC52F620086E5AC /* PHEPubReaderController.swift in Sources */,
+				2C4EEE1C1CF5966500CCFBCA /* PHCourseListController.swift in Sources */,
+				2C4EEE191CF5966500CCFBCA /* PHCourseChatListController.swift in Sources */,
+				2C2F7B081CAFF8AE00DE5B65 /* PHOwnerPiece.swift in Sources */,
+				2CE0C9C21CACCD3600596C97 /* PHOwnerCell.swift in Sources */,
+				2CE0C9C81CACCD3600596C97 /* PHOwnerViewController.swift in Sources */,
+				2CB770111CE03A5E0096F234 /* PHInitialViewControllerAccessor.swift in Sources */,
+				2C274DBF1CC52CBA0086E5AC /* PHEPubPieceCell.swift in Sources */,
+				2CE0C9C41CACCD3600596C97 /* PHOwnerCourseCell.swift in Sources */,
+				2C680A561D0AADC50049FA95 /* PHCommentCellConfiguration.swift in Sources */,
+				2CE0C9B61CACCD3600596C97 /* PHChatHeader.swift in Sources */,
+				2C06420A1CAD2518007DB088 /* UIViewExtensions.swift in Sources */,
+				2C2F7B1F1CB0C14200DE5B65 /* GVUserDefaults+PHAdditions.m in Sources */,
+				2C2F7B0A1CB0032500DE5B65 /* PHPieceCellConfiguration.swift in Sources */,
+				B42D09B71CFFEFAE00E29093 /* PHBaseLoginViewController.swift in Sources */,
+				870328371CD2F4DE00B8EC26 /* PHTag.swift in Sources */,
+				2C2F7AFB1CAFB27700DE5B65 /* PHVideoPieceCell.swift in Sources */,
+				2CE0C9A41CACCD3600596C97 /* PHTextPieceCell.swift in Sources */,
+				2CE0C9B11CACCD3600596C97 /* PHFeedViewController.swift in Sources */,
+				2CE0C99C1CACCD3600596C97 /* PHTermsAndConditionsHeaderChapterView.swift in Sources */,
+				2C57C1A71CE56863005784F1 /* PHAppSettingsViewController.swift in Sources */,
+				2CE0C9AB1CACCD3600596C97 /* PHFeedCell.swift in Sources */,
+				2CFC8DD01CACC25200887B32 /* PHAPIManager.swift in Sources */,
+				2CE0C9BC1CACCD3600596C97 /* PHGraphView.swift in Sources */,
+				2C0641FA1CAD0F31007DB088 /* PHWebViewController.swift in Sources */,
+				2CE0C9B41CACCD3600596C97 /* PHChatFooter.swift in Sources */,
+				2C98660B1D0019C600D216C7 /* PHSearchViewController.swift in Sources */,
+				2C4EEE011CF574A900CCFBCA /* PHCategoryListViewController.swift in Sources */,
+				2C4EEE1A1CF5966500CCFBCA /* PHCourseListAbstractController.swift in Sources */,
+				2CE0C9991CACCD3600596C97 /* PHLoginViewController.swift in Sources */,
+				2CBF34A81CC764C100C7D576 /* PHCalendarViewController.swift in Sources */,
+				872501341CE8121700DAB5B6 /* PHComment.swift in Sources */,
+				2CE0C9BA1CACCD3600596C97 /* PHCourseRoomIconView.swift in Sources */,
+				2C51D8971CFAF504000D6318 /* PHCourseRoomViewControllerExtensions.swift in Sources */,
+				2C3F26E91CD9D8F800BEE957 /* PHRouter.swift in Sources */,
+				B4C201871D36C4BD00584E04 /* PHTransitionManager.swift in Sources */,
+				2C4EEE1E1CF5966500CCFBCA /* PHCourseViewController.swift in Sources */,
+				2C2F7B061CAFF8A700DE5B65 /* PHUserPiece.swift in Sources */,
+				2C982D5C1D0AE2220019B82E /* PHChatViewControllerExtensions.swift in Sources */,
+				2CE0C9501CACCD2C00596C97 /* PHCourseDetailView.swift in Sources */,
+				2C6F078A1CC9160500235369 /* PHOwner.swift in Sources */,
+				2CE0C9A81CACCD3600596C97 /* PHChatViewController.swift in Sources */,
+				2CBF34AC1CC764C100C7D576 /* PHCourseSettingsViewController.swift in Sources */,
+				2CF832231D0E506E002F29AE /* PHChatUserInputView.swift in Sources */,
+				B4103B201CEB241400FB16BC /* PHCourseDeliveryInfo.swift in Sources */,
+				2CB22A791CE0D01500598426 /* PHApplicationConfiguration.swift in Sources */,
+				2CB770261CE078800096F234 /* PHCustomTransitionNavigationController.swift in Sources */,
+				87CDED4A1CD579B30056B2F5 /* PHVideoPlayerViewController.swift in Sources */,
+				2CE0C9B21CACCD3600596C97 /* PHSettingsViewController.swift in Sources */,
+				2CE0C9A91CACCD3600596C97 /* PHCourseRoomChapterCell.swift in Sources */,
+				2CE0C9D41CACCF0C00596C97 /* PHPiece.swift in Sources */,
+				2C1807DD1CD0742800D597E6 /* PHData.swift in Sources */,
+				2C1807EE1CD32EF700D597E6 /* PHInputAnimationView.swift in Sources */,
+				2C1807E91CD32E4F00D597E6 /* PHUserPieceCell.swift in Sources */,
+				2CB770271CE078800096F234 /* PHPopUpController.swift in Sources */,
+				2C4EEE1F1CF5966500CCFBCA /* PHOwnerDetailsView.swift in Sources */,
+				2C2F7AF71CAF955F00DE5B65 /* PHAudioPieceCell.swift in Sources */,
+				2CF7FAF71D20FDA50015DE53 /* PHPaginator.swift in Sources */,
+				2CE0C9C61CACCD3600596C97 /* PHHubViewController.swift in Sources */,
+				2CE0C9C01CACCD3600596C97 /* PHCategoryCell.swift in Sources */,
+				2CB770361CE079070096F234 /* PHTabView.swift in Sources */,
+				2C982D581D0AC9770019B82E /* PHCourseChatCellConfiguration.swift in Sources */,
+				2CB770321CE078A30096F234 /* PHTabViewController.swift in Sources */,
+				2CE0C9E31CACDDAE00596C97 /* UIKitExtensions.swift in Sources */,
+				2C18089A1CD71CA200D597E6 /* PHDefaultColorTheme.swift in Sources */,
+				2C0642001CAD1208007DB088 /* PHURLPieceCell.swift in Sources */,
+				2CE0C94C1CACCD2C00596C97 /* PHChapterView.swift in Sources */,
+				2CBF34AA1CC764C100C7D576 /* PHCourseReviewsViewController.swift in Sources */,
+				A732B78B1C6ADFC0007AC824 /* PHConstants.swift in Sources */,
+				2C3DA9FD1CC0962E0037C75D /* PHQRReaderViewController.swift in Sources */,
+				2C2F7B151CB0145200DE5B65 /* PHLogoView.swift in Sources */,
+				2C1807DF1CD07B2800D597E6 /* ObjectMapperExtensions.swift in Sources */,
+				2CE0C9961CACCD3600596C97 /* PHTermsAndConditionsCell.swift in Sources */,
+				A732B7491C6AB023007AC824 /* PHAppDelegate.swift in Sources */,
+				2CF7FAFE1D211D7F0015DE53 /* PHLoadingTableViewCell.swift in Sources */,
+				2CE0C9D21CACCF0200596C97 /* PHChapter.swift in Sources */,
+				2C4EEE221CF5977100CCFBCA /* PHOwnerListViewController.swift in Sources */,
+				2C2F7B0D1CB00CDA00DE5B65 /* PHColorTheme.swift in Sources */,
+				2C6F078E1CC91C6600235369 /* PHCourseCategory.swift in Sources */,
+				2C0642081CAD1D23007DB088 /* SDWebImageExtensions.swift in Sources */,
+				2C2F7B001CAFB40D00DE5B65 /* PHVideoPlayerView.swift in Sources */,
+				2CE0C9A61CACCD3600596C97 /* PHUserReactionPieceCell.swift in Sources */,
+				2C2F7B1C1CB0B5D900DE5B65 /* Aspects+Swift.m in Sources */,
+				2C3F26EC1CDA0F7C00BEE957 /* PHAuthManager.swift in Sources */,
+				2C2F7B101CB00F6C00DE5B65 /* PHInitialViewController.swift in Sources */,
+				2CE0C99E1CACCD3600596C97 /* PHTermsAndConditionsHeaderView.swift in Sources */,
+				2CF7FB001D211D910015DE53 /* PHLoadingCollectionViewCell.swift in Sources */,
+				2C6F07961CC9249300235369 /* PHCourseDetailViewConfiguration.swift in Sources */,
+				2C51D8931CFAF297000D6318 /* PHSettingsViewControllerExtensions.swift in Sources */,
+				2C0642051CAD19DD007DB088 /* PHImageViewController.swift in Sources */,
+				2C1807EB1CD32E5700D597E6 /* PHOwnerPieceCell.swift in Sources */,
+				2C18D5CE1CCC674A00E1D5B8 /* PHUser.swift in Sources */,
+				2CE0C9E51CACDE0200596C97 /* FoundationExtensions.swift in Sources */,
+				2C1807E71CD31DB200D597E6 /* PHCourseRoomViewController.swift in Sources */,
+				2CFC8DD21CACC3E000887B32 /* PHCourse.swift in Sources */,
+				872501331CE8121700DAB5B6 /* PHAuthor.swift in Sources */,
+				2CE0C9E01CACDCFA00596C97 /* PHPieceCell.swift in Sources */,
+				2C32488D1D23ECE400EEF8AF /* PHHubNavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C1807FE1CD6FDC500D597E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1807FF1CD6FDC500D597E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A732B7541C6AB023007AC824 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A732B7551C6AB023007AC824 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C1808021CD6FDC500D597E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96B0F36CB554E0C6A9FCEFA /* Pods-PerzzleStudio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				CURRENT_PROJECT_VERSION = 45;
+				INFOPLIST_FILE = PerzzleStudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perzzle.PerzzleStudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2bd5557-11ee-4033-83d6-0918ad36230f";
+				SWIFT_OBJC_BRIDGING_HEADER = PerzzleStudio/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		2C1808031CD6FDC500D597E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EAFF6963D81C195FB5B214 /* Pods-PerzzleStudio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				CURRENT_PROJECT_VERSION = 45;
+				INFOPLIST_FILE = PerzzleStudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perzzle.PerzzleStudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2bd5557-11ee-4033-83d6-0918ad36230f";
+				SWIFT_OBJC_BRIDGING_HEADER = PerzzleStudio/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A732B7581C6AB023007AC824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A732B7591C6AB023007AC824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A732B75B1C6AB023007AC824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311662506865B3B17F88880A /* Pods-PezzleHub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				CURRENT_PROJECT_VERSION = 45;
+				INFOPLIST_FILE = PezzleHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Tmfltest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2bd5557-11ee-4033-83d6-0918ad36230f";
+				PROVISIONING_PROFILE_SPECIFIER = testappDevProv;
+				SWIFT_OBJC_BRIDGING_HEADER = PezzleHub/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A732B75C1C6AB023007AC824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A13AA4B6656C9008F16D17D /* Pods-PezzleHub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DongMei Gao (UVY9CC44H2)";
+				CURRENT_PROJECT_VERSION = 45;
+				INFOPLIST_FILE = PezzleHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Tmfltest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2bd5557-11ee-4033-83d6-0918ad36230f";
+				PROVISIONING_PROFILE_SPECIFIER = testappDevProv;
+				SWIFT_OBJC_BRIDGING_HEADER = PezzleHub/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C1808041CD6FDC500D597E6 /* Build configuration list for PBXNativeTarget "PerzzleStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1808021CD6FDC500D597E6 /* Debug */,
+				2C1808031CD6FDC500D597E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A732B7401C6AB023007AC824 /* Build configuration list for PBXProject "PezzleHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A732B7581C6AB023007AC824 /* Debug */,
+				A732B7591C6AB023007AC824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A732B75A1C6AB023007AC824 /* Build configuration list for PBXNativeTarget "PezzleHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A732B75B1C6AB023007AC824 /* Debug */,
+				A732B75C1C6AB023007AC824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A732B73D1C6AB023007AC824 /* Project object */;
+}

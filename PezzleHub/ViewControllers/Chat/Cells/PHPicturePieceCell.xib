@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="700" selectionStyle="none" indentationWidth="10" reuseIdentifier="PHPicturePieceCell" rowHeight="300" id="yfF-V0-cPu" customClass="PHPicturePieceCell" customModule="PerzzleStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="299"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfF-V0-cPu" id="O3A-2t-jfk">
+                <frame key="frameInset" width="335" height="298"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmn-m1-rbZ">
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_owner" translatesAutoresizingMaskIntoConstraints="NO" id="5tS-vf-pcw">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WWz-Gr-5XI">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5tS-vf-pcw" secondAttribute="trailing" id="31d-sC-is8"/>
+                            <constraint firstAttribute="trailing" secondItem="WWz-Gr-5XI" secondAttribute="trailing" id="7Pe-xt-R6D"/>
+                            <constraint firstAttribute="bottom" secondItem="WWz-Gr-5XI" secondAttribute="bottom" id="SrJ-kA-ccC"/>
+                            <constraint firstItem="5tS-vf-pcw" firstAttribute="top" secondItem="Jmn-m1-rbZ" secondAttribute="top" id="Z57-rv-d6G"/>
+                            <constraint firstAttribute="width" secondItem="Jmn-m1-rbZ" secondAttribute="height" multiplier="1:1" id="awF-4v-pNh"/>
+                            <constraint firstItem="WWz-Gr-5XI" firstAttribute="leading" secondItem="Jmn-m1-rbZ" secondAttribute="leading" constant="4" id="azO-Vw-NoG"/>
+                            <constraint firstItem="WWz-Gr-5XI" firstAttribute="top" secondItem="Jmn-m1-rbZ" secondAttribute="top" id="eSG-sn-lTt"/>
+                            <constraint firstAttribute="bottom" secondItem="5tS-vf-pcw" secondAttribute="bottom" id="lTx-Xa-HAb"/>
+                            <constraint firstItem="5tS-vf-pcw" firstAttribute="leading" secondItem="Jmn-m1-rbZ" secondAttribute="leading" id="zNy-h9-ApA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Jmn-m1-rbZ" firstAttribute="top" secondItem="O3A-2t-jfk" secondAttribute="top" constant="8" id="G93-qC-CEl"/>
+                    <constraint firstItem="Jmn-m1-rbZ" firstAttribute="centerY" secondItem="O3A-2t-jfk" secondAttribute="centerY" id="bbN-gD-Eby"/>
+                    <constraint firstAttribute="bottom" secondItem="Jmn-m1-rbZ" secondAttribute="bottom" constant="8" id="hMv-ap-ceV"/>
+                    <constraint firstAttribute="trailing" secondItem="Jmn-m1-rbZ" secondAttribute="trailing" constant="40" id="inK-So-KPQ"/>
+                    <constraint firstItem="Jmn-m1-rbZ" firstAttribute="leading" secondItem="O3A-2t-jfk" secondAttribute="leading" constant="17" id="wq8-JG-Uul"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="5tS-vf-pcw" id="Qhy-68-wao"/>
+                <outlet property="pictureView" destination="WWz-Gr-5XI" id="r3L-og-dNf"/>
+                <outlet property="pieceContentView" destination="Jmn-m1-rbZ" id="Jjd-5Z-L4i"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="436.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bubble_owner" width="44" height="40"/>
+    </resources>
+</document>

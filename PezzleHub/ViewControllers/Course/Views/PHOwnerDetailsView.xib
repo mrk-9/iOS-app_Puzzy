@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PHOwnerDetailsView" customModule="PezzleHub" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="znQ-uW-WVR" id="OlQ-we-eEI"/>
+                <outlet property="ownerBottomView" destination="rhp-a7-dhg" id="ncx-c1-MsR"/>
+                <outlet property="ownerDescriptionLabel" destination="bxM-vP-RmG" id="fbf-BB-JYO"/>
+                <outlet property="ownerNameLabel" destination="s83-PI-9cP" id="RtO-3Y-JYH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalHuggingPriority="280" verticalCompressionResistancePriority="730" id="5aQ-nr-QCb">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="292"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example_icon" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-uW-WVR">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="INN-qO-NxO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="3Yh-a3-jc8">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" text="デザイナー／ディレクター。2008年初夏より「SparkProject」に参加... sdaffa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxM-vP-RmG">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bxM-vP-RmG" secondAttribute="bottom" constant="15" id="7av-TG-9aR"/>
+                        <constraint firstAttribute="trailing" secondItem="bxM-vP-RmG" secondAttribute="trailing" constant="12" id="KwM-N7-7wr"/>
+                        <constraint firstItem="bxM-vP-RmG" firstAttribute="leading" secondItem="3Yh-a3-jc8" secondAttribute="leading" constant="12" id="bV4-n8-aWt"/>
+                        <constraint firstItem="bxM-vP-RmG" firstAttribute="top" secondItem="3Yh-a3-jc8" secondAttribute="top" constant="15" id="jcH-EX-jT9"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高輪知明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s83-PI-9cP">
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhp-a7-dhg">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llf-FZ-pwp">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="21"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="author_icon" translatesAutoresizingMaskIntoConstraints="NO" id="83q-aB-EoT"/>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Llf-FZ-pwp" firstAttribute="centerX" secondItem="rhp-a7-dhg" secondAttribute="centerX" constant="-8" id="0DP-4r-brJ"/>
+                        <constraint firstItem="Llf-FZ-pwp" firstAttribute="centerY" secondItem="rhp-a7-dhg" secondAttribute="centerY" id="62U-qA-aXl"/>
+                        <constraint firstItem="83q-aB-EoT" firstAttribute="centerY" secondItem="Llf-FZ-pwp" secondAttribute="centerY" constant="1" id="JXi-yO-NgR"/>
+                        <constraint firstAttribute="height" constant="55" id="ciS-IF-jZn"/>
+                        <constraint firstItem="83q-aB-EoT" firstAttribute="leading" secondItem="Llf-FZ-pwp" secondAttribute="trailing" constant="2" id="ls4-xU-lAR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Yh-a3-jc8" secondAttribute="trailing" id="8eq-7f-8c1"/>
+                <constraint firstAttribute="trailing" secondItem="s83-PI-9cP" secondAttribute="trailing" constant="12" id="AlX-8m-Hfd"/>
+                <constraint firstItem="znQ-uW-WVR" firstAttribute="top" secondItem="5aQ-nr-QCb" secondAttribute="top" constant="15" id="DMW-er-CQs"/>
+                <constraint firstItem="rhp-a7-dhg" firstAttribute="top" secondItem="3Yh-a3-jc8" secondAttribute="bottom" constant="1" id="IRq-Vf-2VC"/>
+                <constraint firstItem="rhp-a7-dhg" firstAttribute="leading" secondItem="5aQ-nr-QCb" secondAttribute="leading" id="QOM-Uy-qOU"/>
+                <constraint firstItem="znQ-uW-WVR" firstAttribute="centerX" secondItem="5aQ-nr-QCb" secondAttribute="centerX" id="R0t-EU-lhH"/>
+                <constraint firstAttribute="trailing" secondItem="rhp-a7-dhg" secondAttribute="trailing" id="Znz-0n-yBH"/>
+                <constraint firstItem="s83-PI-9cP" firstAttribute="leading" secondItem="5aQ-nr-QCb" secondAttribute="leading" constant="12" id="cAa-0F-N8d"/>
+                <constraint firstItem="s83-PI-9cP" firstAttribute="top" secondItem="znQ-uW-WVR" secondAttribute="bottom" constant="8" id="esK-hG-kmG"/>
+                <constraint firstItem="znQ-uW-WVR" firstAttribute="width" secondItem="znQ-uW-WVR" secondAttribute="height" multiplier="1:1" id="o5s-D4-g6D"/>
+                <constraint firstItem="3Yh-a3-jc8" firstAttribute="top" secondItem="s83-PI-9cP" secondAttribute="bottom" constant="8" id="oSF-dH-lL3"/>
+                <constraint firstItem="3Yh-a3-jc8" firstAttribute="leading" secondItem="5aQ-nr-QCb" secondAttribute="leading" id="xXg-Oa-RE1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-195.5" y="-291"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="author_icon" width="11" height="12"/>
+        <image name="example_icon" width="60" height="60"/>
+    </resources>
+</document>

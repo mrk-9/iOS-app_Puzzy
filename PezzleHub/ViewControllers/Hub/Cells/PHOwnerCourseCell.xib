@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PHOwnerCourseCell" id="gTV-IL-0wX" customClass="PHOwnerCourseCell" customModule="PezzleHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zun-lA-wEi">
+                        <color key="backgroundColor" red="0.72941176470000002" green="0.80392156859999997" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example_icon" translatesAutoresizingMaskIntoConstraints="NO" id="CCS-gR-5Jr">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CCS-gR-5Jr" secondAttribute="height" multiplier="1:1" id="JIx-Xf-UPF"/>
+                            <constraint firstAttribute="width" constant="60" id="peR-53-KIG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FrocessingではじめるActionScriptドローイング" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVS-8a-8Rc">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Zun-lA-wEi" firstAttribute="width" secondItem="CCS-gR-5Jr" secondAttribute="width" id="02x-zO-xPe"/>
+                <constraint firstItem="pVS-8a-8Rc" firstAttribute="top" secondItem="CCS-gR-5Jr" secondAttribute="bottom" constant="12" id="1au-1o-JYv"/>
+                <constraint firstAttribute="bottom" secondItem="pVS-8a-8Rc" secondAttribute="bottom" constant="12" id="3Zh-RB-Hqz"/>
+                <constraint firstItem="Zun-lA-wEi" firstAttribute="leading" secondItem="CCS-gR-5Jr" secondAttribute="leading" constant="2" id="7Wi-tA-IMp"/>
+                <constraint firstItem="Zun-lA-wEi" firstAttribute="height" secondItem="CCS-gR-5Jr" secondAttribute="height" id="G1D-MA-yAK"/>
+                <constraint firstAttribute="trailing" secondItem="pVS-8a-8Rc" secondAttribute="trailing" constant="12" id="KdL-Mq-S9t"/>
+                <constraint firstItem="Zun-lA-wEi" firstAttribute="top" secondItem="CCS-gR-5Jr" secondAttribute="top" constant="2" id="PHJ-U0-jZE"/>
+                <constraint firstItem="CCS-gR-5Jr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RhL-j3-NbT"/>
+                <constraint firstItem="CCS-gR-5Jr" firstAttribute="width" secondItem="CCS-gR-5Jr" secondAttribute="height" multiplier="1:1" id="SND-Ln-l27"/>
+                <constraint firstItem="pVS-8a-8Rc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="j1Y-9r-ego"/>
+                <constraint firstItem="CCS-gR-5Jr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pzf-Xa-xhz"/>
+            </constraints>
+            <size key="customSize" width="195" height="204"/>
+            <connections>
+                <outlet property="courseImageView" destination="CCS-gR-5Jr" id="bre-q3-KMc"/>
+                <outlet property="courseTitleLabel" destination="pVS-8a-8Rc" id="uWX-Oc-SF0"/>
+            </connections>
+            <point key="canvasLocation" x="307.5" y="370.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="example_icon" width="60" height="60"/>
+    </resources>
+</document>

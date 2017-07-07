@@ -1,0 +1,113 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - Aspects (1.4.1)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Crashlytics (3.8.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.9)
+  - GVUserDefaults (1.0.2)
+  - HPGrowingTextView (1.1)
+  - libwebp (0.5.1):
+    - libwebp/core (= 0.5.1)
+    - libwebp/dec (= 0.5.1)
+    - libwebp/demux (= 0.5.1)
+    - libwebp/dsp (= 0.5.1)
+    - libwebp/enc (= 0.5.1)
+    - libwebp/mux (= 0.5.1)
+    - libwebp/utils (= 0.5.1)
+    - libwebp/webp (= 0.5.1)
+  - libwebp/core (0.5.1):
+    - libwebp/webp
+  - libwebp/dec (0.5.1):
+    - libwebp/core
+  - libwebp/demux (0.5.1):
+    - libwebp/core
+  - libwebp/dsp (0.5.1):
+    - libwebp/core
+  - libwebp/enc (0.5.1):
+    - libwebp/core
+  - libwebp/mux (0.5.1):
+    - libwebp/core
+  - libwebp/utils (0.5.1):
+    - libwebp/core
+  - libwebp/webp (0.5.1)
+  - Mixpanel (3.0.4):
+    - Mixpanel/Mixpanel (= 3.0.4)
+  - Mixpanel/Mixpanel (3.0.4)
+  - NSDate+TimeAgo (1.0.6)
+  - ObjectMapper (2.0.0)
+  - SDWebImage/Core (3.8.2)
+  - SDWebImage/WebP (3.8.2):
+    - libwebp
+    - SDWebImage/Core
+  - SSKeychain (1.4.1)
+  - SwiftyJSON (2.3.2)
+  - UICollectionViewLeftAlignedLayout (1.0.2)
+  - VTAcknowledgementsViewController (1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0.1)
+  - AlamofireObjectMapper (~> 4.0.0)
+  - Aspects (~> 1.4.1)
+  - BlocksKit (~> 2.2.5)
+  - Crashlytics
+  - Fabric
+  - GVUserDefaults (~> 1.0.2)
+  - HPGrowingTextView (~> 1.1)
+  - Mixpanel
+  - NSDate+TimeAgo (~> 1.0.6)
+  - SDWebImage/WebP
+  - SSKeychain (~> 1.4.0)
+  - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
+  - UICollectionViewLeftAlignedLayout (~> 1.0.2)
+  - VTAcknowledgementsViewController (~> 1.0)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :branch: swift3
+    :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: de5dc3b1b421805769590d331178551bbb0e5733
+    :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Crashlytics: 27acca95a01b042a8294291dd6dff27f8f6af6d7
+  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
+  Mixpanel: 4a2330c26556109d2f42b01e36a05eb9e2caf25e
+  NSDate+TimeAgo: 35601c619b2d59290055e4fe76e61d97677a2360
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
+  UICollectionViewLeftAlignedLayout: 830bf6fa5bab9f9b464f62e3384f9d2e00b3c0f6
+  VTAcknowledgementsViewController: 44da49d57a1dbf414e653688793a130d24af151e
+
+PODFILE CHECKSUM: 066a5d222cc39b79ed1743792ef6491569210a95
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="vlk-Vg-2yY">
+            <objects>
+                <viewController storyboardIdentifier="PSLoginViewController" id="D4I-Py-KkD" customClass="PSLoginViewController" customModule="PerzzleStudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nzo-R3-s9W"/>
+                        <viewControllerLayoutGuide type="bottom" id="swB-kX-Lr9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbE-QN-r0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98v-Qf-ZEh">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_studio_logo" translatesAutoresizingMaskIntoConstraints="NO" id="egr-vY-rYd">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="egr-vY-rYd" secondAttribute="height" multiplier="1:1" id="JYO-ze-mTD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="egr-vY-rYd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="98v-Qf-ZEh" secondAttribute="leading" id="5Nd-in-GhT"/>
+                                    <constraint firstItem="egr-vY-rYd" firstAttribute="centerY" secondItem="98v-Qf-ZEh" secondAttribute="centerY" id="LqK-LJ-kbV"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="egr-vY-rYd" secondAttribute="bottom" id="Q7X-lX-SHF"/>
+                                    <constraint firstItem="egr-vY-rYd" firstAttribute="centerX" secondItem="98v-Qf-ZEh" secondAttribute="centerX" id="Tju-h4-9H9"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="egr-vY-rYd" secondAttribute="trailing" id="UKj-yE-gHX"/>
+                                    <constraint firstItem="egr-vY-rYd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="98v-Qf-ZEh" secondAttribute="top" id="k1a-Ni-RDF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-P3-0LB">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail or Studio Unique Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OvJ-oL-DxI">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="JZu-J4-UfX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="D4I-Py-KkD" id="9zM-Ey-ODG"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hec-Qn-dXg">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="hgn-ic-6JK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="D4I-Py-KkD" id="2wE-iL-pDn"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-bC-JBG">
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.92156862750000001" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="u3j-bC-JBG" firstAttribute="top" secondItem="OvJ-oL-DxI" secondAttribute="bottom" id="1B2-vp-Baq"/>
+                                    <constraint firstAttribute="trailing" secondItem="OvJ-oL-DxI" secondAttribute="trailing" constant="16" id="5Sg-vK-B5B"/>
+                                    <constraint firstItem="hec-Qn-dXg" firstAttribute="leading" secondItem="OvJ-oL-DxI" secondAttribute="leading" id="Ahl-yS-OHo"/>
+                                    <constraint firstItem="hec-Qn-dXg" firstAttribute="trailing" secondItem="OvJ-oL-DxI" secondAttribute="trailing" id="ETE-78-rah"/>
+                                    <constraint firstItem="u3j-bC-JBG" firstAttribute="leading" secondItem="Uu9-P3-0LB" secondAttribute="leading" id="FvV-jO-dN8"/>
+                                    <constraint firstItem="OvJ-oL-DxI" firstAttribute="top" secondItem="Uu9-P3-0LB" secondAttribute="top" id="GhS-zB-MUi"/>
+                                    <constraint firstItem="hec-Qn-dXg" firstAttribute="top" secondItem="u3j-bC-JBG" secondAttribute="bottom" id="Pil-d6-ory"/>
+                                    <constraint firstItem="OvJ-oL-DxI" firstAttribute="leading" secondItem="Uu9-P3-0LB" secondAttribute="leading" constant="16" id="bhi-Ka-QMf"/>
+                                    <constraint firstAttribute="height" constant="77" id="g8T-vK-tuv"/>
+                                    <constraint firstAttribute="bottom" secondItem="hec-Qn-dXg" secondAttribute="bottom" id="svX-H2-izv"/>
+                                    <constraint firstAttribute="trailing" secondItem="u3j-bC-JBG" secondAttribute="trailing" id="xzn-en-Pan"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3g-a2-8qx">
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KfN-PW-CM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginClick" destination="D4I-Py-KkD" eventType="touchUpInside" id="ris-Yg-zaT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2F-L6-d66">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Fd-6F-mz1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                <state key="normal" title="Facebook Login">
+                                    <color key="titleColor" red="0.46274509800000002" green="0.65098039220000004" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe1-KR-KGd">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                <state key="normal" title="Forget Password">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showForgotPassrordView" destination="D4I-Py-KkD" eventType="touchUpInside" id="shN-Fe-sUQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2C-it-ioJ">
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PerzzleAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VZX-nW-HUp">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VZX-nW-HUp" secondAttribute="height" multiplier="1:1" id="v7f-np-Fw4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-tI-mKS">
+                                        <attributedString key="attributedText">
+                                            <fragment content="Perzzle">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Italic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="22" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="App">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-BoldItalic"/>
+                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0O-P0-6Vf">
+                                        <string key="text">知識と作品に出会い
+マイペースに学べる配信サービス</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-oq-YdA" userLabel="Spacer">
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.0" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9dv-oq-YdA" secondAttribute="height" multiplier="1:1" id="alZ-Vz-5Vb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="o0O-P0-6Vf" firstAttribute="top" secondItem="ZUG-tI-mKS" secondAttribute="bottom" constant="12" id="11Q-Wd-zbF"/>
+                                    <constraint firstItem="VZX-nW-HUp" firstAttribute="top" secondItem="9dv-oq-YdA" secondAttribute="bottom" id="7oh-O5-4Vh"/>
+                                    <constraint firstItem="o0O-P0-6Vf" firstAttribute="leading" secondItem="ZUG-tI-mKS" secondAttribute="leading" id="9eY-91-2TM"/>
+                                    <constraint firstItem="ZUG-tI-mKS" firstAttribute="leading" secondItem="K2C-it-ioJ" secondAttribute="leading" constant="24" id="BNe-OW-tS9"/>
+                                    <constraint firstItem="VZX-nW-HUp" firstAttribute="leading" secondItem="ZUG-tI-mKS" secondAttribute="trailing" constant="8" id="CjT-2F-8KG"/>
+                                    <constraint firstAttribute="trailing" secondItem="9dv-oq-YdA" secondAttribute="trailing" id="Clq-MP-qqt"/>
+                                    <constraint firstItem="ZUG-tI-mKS" firstAttribute="top" secondItem="K2C-it-ioJ" secondAttribute="top" constant="16" id="GZm-Av-6Cv"/>
+                                    <constraint firstItem="VZX-nW-HUp" firstAttribute="centerY" secondItem="K2C-it-ioJ" secondAttribute="centerY" id="NgD-Im-5jC"/>
+                                    <constraint firstAttribute="height" constant="100" id="SjX-PC-ZSS"/>
+                                    <constraint firstItem="VZX-nW-HUp" firstAttribute="leading" secondItem="o0O-P0-6Vf" secondAttribute="trailing" constant="8" id="TWz-Se-isJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="VZX-nW-HUp" secondAttribute="trailing" constant="12" id="YBA-Pq-16f"/>
+                                    <constraint firstItem="o0O-P0-6Vf" firstAttribute="leading" secondItem="K2C-it-ioJ" secondAttribute="leading" constant="8" id="aYO-OK-m8A"/>
+                                    <constraint firstItem="9dv-oq-YdA" firstAttribute="leading" secondItem="VZX-nW-HUp" secondAttribute="trailing" id="dfs-Ij-xhG"/>
+                                    <constraint firstItem="9dv-oq-YdA" firstAttribute="top" secondItem="K2C-it-ioJ" secondAttribute="top" id="t5a-w3-G3N"/>
+                                    <constraint firstItem="o0O-P0-6Vf" firstAttribute="trailing" secondItem="ZUG-tI-mKS" secondAttribute="trailing" id="uwY-ti-4s8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aYO-OK-m8A"/>
+                                        <exclude reference="TWz-Se-isJ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1Zu-NW-Hez" appends="YES" id="3hu-3l-q71"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OF-rq-lF0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="O7v-Cs-jcA"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="登録とコース作成は">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="WEB">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529411764705883" green="0.61176470588235299" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="版">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529411764705883" green="0.61176470588235299" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                            <font key="NSOriginalFont" size="11" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529411764705883" green="0.61176470588235299" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Perzzle Studio">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529411764705883" green="0.61176470588235299" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="から行えます">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HiraginoSans-W3"/>
+                                            <font key="NSOriginalFont" size="11" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="1OF-rq-lF0" firstAttribute="top" secondItem="98v-Qf-ZEh" secondAttribute="bottom" constant="8" id="33N-SE-9P0"/>
+                            <constraint firstItem="Uu9-P3-0LB" firstAttribute="top" secondItem="98v-Qf-ZEh" secondAttribute="bottom" constant="58" id="AhW-Wu-FoG"/>
+                            <constraint firstItem="98v-Qf-ZEh" firstAttribute="leading" secondItem="QbE-QN-r0Q" secondAttribute="leadingMargin" constant="12" id="Fy4-FN-GIs"/>
+                            <constraint firstItem="fe1-KR-KGd" firstAttribute="bottom" secondItem="V2F-L6-d66" secondAttribute="bottom" id="ICE-ab-Tqx"/>
+                            <constraint firstItem="swB-kX-Lr9" firstAttribute="top" secondItem="K2C-it-ioJ" secondAttribute="bottom" id="JkE-q8-lIq"/>
+                            <constraint firstItem="F3g-a2-8qx" firstAttribute="trailing" secondItem="Uu9-P3-0LB" secondAttribute="trailing" id="LTf-ba-ChV"/>
+                            <constraint firstAttribute="trailing" secondItem="K2C-it-ioJ" secondAttribute="trailing" id="MOE-y9-mUt"/>
+                            <constraint firstItem="swB-kX-Lr9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="F3g-a2-8qx" secondAttribute="bottom" constant="154" id="Mzg-vr-cVO"/>
+                            <constraint firstItem="Uu9-P3-0LB" firstAttribute="top" secondItem="1OF-rq-lF0" secondAttribute="bottom" constant="8" id="Sko-nn-YrE"/>
+                            <constraint firstItem="K2C-it-ioJ" firstAttribute="leading" secondItem="QbE-QN-r0Q" secondAttribute="leading" id="TDJ-Oz-607"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uu9-P3-0LB" secondAttribute="trailing" constant="12" id="UfX-Kt-sGc"/>
+                            <constraint firstItem="1OF-rq-lF0" firstAttribute="centerX" secondItem="QbE-QN-r0Q" secondAttribute="centerX" id="UoH-t7-DBE"/>
+                            <constraint firstItem="fe1-KR-KGd" firstAttribute="leading" secondItem="V2F-L6-d66" secondAttribute="trailing" constant="12" id="WQx-WM-89J"/>
+                            <constraint firstItem="fe1-KR-KGd" firstAttribute="top" secondItem="V2F-L6-d66" secondAttribute="top" id="aon-db-Ipj"/>
+                            <constraint firstItem="K2C-it-ioJ" firstAttribute="top" secondItem="V2F-L6-d66" secondAttribute="bottom" constant="12" id="bDQ-em-sSd"/>
+                            <constraint firstItem="98v-Qf-ZEh" firstAttribute="top" secondItem="nzo-R3-s9W" secondAttribute="bottom" id="dLX-BM-uzN"/>
+                            <constraint firstItem="Uu9-P3-0LB" firstAttribute="leading" secondItem="QbE-QN-r0Q" secondAttribute="leadingMargin" constant="12" id="en5-da-Hfo"/>
+                            <constraint firstItem="V2F-L6-d66" firstAttribute="top" secondItem="F3g-a2-8qx" secondAttribute="bottom" priority="999" constant="12" id="fbh-Rs-dui"/>
+                            <constraint firstItem="V2F-L6-d66" firstAttribute="trailing" secondItem="F3g-a2-8qx" secondAttribute="trailing" constant="-300" id="hag-vD-rNk"/>
+                            <constraint firstItem="F3g-a2-8qx" firstAttribute="leading" secondItem="Uu9-P3-0LB" secondAttribute="leading" id="iAH-x3-As1"/>
+                            <constraint firstItem="fe1-KR-KGd" firstAttribute="trailing" secondItem="F3g-a2-8qx" secondAttribute="trailing" id="iPf-2m-TEn"/>
+                            <constraint firstItem="V2F-L6-d66" firstAttribute="leading" secondItem="F3g-a2-8qx" secondAttribute="leading" id="jgK-vB-to5"/>
+                            <constraint firstItem="fe1-KR-KGd" firstAttribute="leading" secondItem="V2F-L6-d66" secondAttribute="leading" constant="300" id="ltg-Xg-DKW"/>
+                            <constraint firstItem="fe1-KR-KGd" firstAttribute="trailing" secondItem="V2F-L6-d66" secondAttribute="trailing" id="nov-Vc-zeY"/>
+                            <constraint firstItem="F3g-a2-8qx" firstAttribute="top" secondItem="Uu9-P3-0LB" secondAttribute="bottom" constant="18" id="oiA-Vh-hlj"/>
+                            <constraint firstItem="V2F-L6-d66" firstAttribute="width" secondItem="fe1-KR-KGd" secondAttribute="width" id="wvE-q8-gLP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="98v-Qf-ZEh" secondAttribute="trailing" constant="12" id="yDf-IQ-29m"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AhW-Wu-FoG"/>
+                                <exclude reference="hag-vD-rNk"/>
+                                <exclude reference="ltg-Xg-DKW"/>
+                                <exclude reference="nov-Vc-zeY"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DiB-ej-S9G" appends="YES" id="FjG-uN-7oF"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="8hz-o9-Zf5"/>
+                    <connections>
+                        <outlet property="bannerImageView" destination="VZX-nW-HUp" id="zP4-32-yGe"/>
+                        <outlet property="credentialsView" destination="Uu9-P3-0LB" id="On9-C8-Jam"/>
+                        <outlet property="emailTextField" destination="OvJ-oL-DxI" id="O1a-Ud-eHG"/>
+                        <outlet property="loginButton" destination="F3g-a2-8qx" id="E3U-I4-XxG"/>
+                        <outlet property="loginButtonBottomConstraint" destination="Mzg-vr-cVO" id="4G5-91-RsX"/>
+                        <outlet property="passwordTextField" destination="hec-Qn-dXg" id="jYB-eF-R0F"/>
+                        <outlet property="perzzleStudioWebLabel" destination="1OF-rq-lF0" id="0HX-zk-OVQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kT9-Sp-jhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1Zu-NW-Hez">
+                    <connections>
+                        <action selector="openPerzzleApp:" destination="D4I-Py-KkD" id="XIn-40-MCN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DiB-ej-S9G">
+                    <connections>
+                        <action selector="hideKeyboard:" destination="D4I-Py-KkD" id="jQT-4q-9Eh"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1242" y="-473"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PerzzleAppIcon" width="60" height="60"/>
+        <image name="login_studio_logo" width="108" height="171"/>
+    </resources>
+</document>

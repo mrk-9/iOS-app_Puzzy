@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="Z9y-60-cQH">
+            <objects>
+                <viewController storyboardIdentifier="PHImageViewController" id="HqS-Cd-PYO" customClass="PHImageViewController" customModule="PerzzleStudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gfy-8x-xFC"/>
+                        <viewControllerLayoutGuide type="bottom" id="aBT-ob-4Li"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ab-XU-9eK">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="yxx-1d-lP5">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNM-9g-3Xq">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HNM-9g-3Xq" firstAttribute="height" secondItem="yxx-1d-lP5" secondAttribute="height" id="39x-E9-8Oc"/>
+                                    <constraint firstItem="HNM-9g-3Xq" firstAttribute="centerY" secondItem="yxx-1d-lP5" secondAttribute="centerY" id="CoD-wW-59f"/>
+                                    <constraint firstItem="HNM-9g-3Xq" firstAttribute="width" secondItem="yxx-1d-lP5" secondAttribute="width" id="Lwb-WF-pFN"/>
+                                    <constraint firstAttribute="trailing" secondItem="HNM-9g-3Xq" secondAttribute="trailing" id="Zwl-wd-ca6"/>
+                                    <constraint firstAttribute="bottom" secondItem="HNM-9g-3Xq" secondAttribute="bottom" id="gRZ-oq-rYl"/>
+                                    <constraint firstItem="HNM-9g-3Xq" firstAttribute="centerX" secondItem="yxx-1d-lP5" secondAttribute="centerX" id="ziL-6i-4j2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="HqS-Cd-PYO" id="ssl-C0-ZmE"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yxx-1d-lP5" firstAttribute="top" secondItem="1ab-XU-9eK" secondAttribute="top" id="4wX-XS-8ub"/>
+                            <constraint firstItem="yxx-1d-lP5" firstAttribute="leading" secondItem="1ab-XU-9eK" secondAttribute="leading" id="6mk-8D-TtG"/>
+                            <constraint firstItem="aBT-ob-4Li" firstAttribute="top" secondItem="yxx-1d-lP5" secondAttribute="bottom" id="IXU-mJ-orl"/>
+                            <constraint firstAttribute="trailing" secondItem="yxx-1d-lP5" secondAttribute="trailing" id="su3-rW-ggb"/>
+                            <constraint firstItem="yxx-1d-lP5" firstAttribute="top" secondItem="Gfy-8x-xFC" secondAttribute="bottom" id="wJa-04-UHg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wJa-04-UHg"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1Ai-Jb-0ld" appends="YES" id="e0O-tJ-dSM"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Tbj-ls-wA1">
+                        <barButtonItem key="rightBarButtonItem" image="close_icon" id="Fkp-d8-aEV">
+                            <connections>
+                                <action selector="dismiss:" destination="HqS-Cd-PYO" id="Iu1-JC-JNX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="HNM-9g-3Xq" id="5i0-RF-pNY"/>
+                        <outlet property="scrollView" destination="yxx-1d-lP5" id="xto-hp-Vxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfi-Nu-QcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="1Ai-Jb-0ld"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close_icon" width="14" height="14"/>
+    </resources>
+</document>

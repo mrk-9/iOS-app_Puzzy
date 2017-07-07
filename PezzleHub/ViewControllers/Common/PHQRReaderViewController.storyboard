@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QRコード読み込み-->
+        <scene sceneID="ZqJ-gM-4DB">
+            <objects>
+                <viewController storyboardIdentifier="PHQRReaderViewController" id="m41-nd-cYG" customClass="PHQRReaderViewController" customModule="PerzzleStudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jQU-Zr-yz8"/>
+                        <viewControllerLayoutGuide type="bottom" id="VaN-BV-75N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3tU-F3-dfq">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QRコード読み込み" id="Oel-UG-x6y">
+                        <barButtonItem key="rightBarButtonItem" image="close_icon" id="CDO-Hh-JQI">
+                            <connections>
+                                <action selector="dismiss:" destination="m41-nd-cYG" id="yHN-Lw-YKt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQk-Bl-D6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close_icon" width="14" height="14"/>
+    </resources>
+</document>
